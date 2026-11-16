@@ -1,0 +1,3405 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>ปริศนาศัพท์ดนตรี</title>
+    <meta
+      name="description"
+      content="ปริศนาอักษรไขว้ศัพท์ดนตรี อ่านคำใบ้ภาษาไทย แล้วเติมศัพท์ดนตรีสากลลงในตาราง"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fff3f8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#2a2140" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E
+%3Ccircle cx='12' cy='23' r='6' fill='%23d4558a'/%3E
+%3Cpath d='M17 23V4h4v19' fill='%23d4558a'/%3E%3C/svg%3E"
+    />
+    <meta property="og:title" content="ปริศนาศัพท์ดนตรี" />
+    <meta
+      property="og:description"
+      content="ปริศนาอักษรไขว้ศัพท์ดนตรี อ่านคำใบ้ภาษาไทย แล้วเติมศัพท์ดนตรีสากลลงในตาราง"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="th_TH" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      /* ธีมพาสเทล */
+      body {
+        background:
+          radial-gradient(circle at 12% 8%, #ffd9ea 0, transparent 38%),
+          radial-gradient(circle at 92% 90%, #dfe9ff 0, transparent 40%),
+          var(--bg);
+        background-attachment: fixed;
+      }
+      h1, h2, button {
+        font-family: 'Sarabun', sans-serif;
+      }
+      /* สีหลัก */
+      :root {
+        --value-0: 0;
+        --value-16px: 16px;
+        --value-1point-6: 1.6;
+        --value-592px: 592px;
+        --value-24px: 24px;
+        --value-28px: 28px;
+        --value-1point-4: 1.4;
+        --value-18px: 18px;
+        --value-12px: 12px;
+        --value-8px: 8px;
+        --value-80px: 80px;
+        --value-1px: 1px;
+        --value-44px: 44px;
+        --value-700: 700;
+        --value-52px: 52px;
+        --value-3px: 3px;
+        --value-2px: 2px;
+        --value-100pct: 100%;
+        --value-1: 1;
+        --value-neg-2px: -2px;
+        --value-9px: 9px;
+        --value-11px: 11px;
+        --value-120ms: 120ms;
+        --value-14px: 14px;
+        --value-4px: 4px;
+        --value-25px: 25px;
+        --value-6px: 6px;
+        --value-1fr: 1fr;
+        --bg: #fff3f8;
+        --surface: #ffffff;
+        --surface-2: #f3f8fa;
+        --line: #f2c8dc;
+        --line-strong: #e4a6c6;
+        --text: #4b3a5e;
+        --text-soft: #5f4f74;
+        --muted: #8e7fa3;
+        --action: #d4558a;
+        --action-ink: #ffffff;
+        --action-soft: #ffe1ee;
+        --blue: #6c8fd8;
+        --blue-soft: #e6eefc;
+        --brass: #a8702a;
+        --good: #3f9a74;
+        --warn: #a8702a;
+        --bad: #c2445e;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) {
+          --bg: #2a2140;
+          --surface: #362b52;
+          --surface-2: #1c2f3b;
+          --line: #5a4b7c;
+          --line-strong: #6f5f96;
+          --text: #f7effd;
+          --text-soft: #e4d9f4;
+          --muted: #bcaed6;
+          --action: #ff9cc2;
+          --action-ink: #3a1430;
+          --action-soft: #5a3354;
+          --blue: #b0c8ff;
+          --blue-soft: #3c4170;
+          --brass: #f7cb7e;
+          --good: #a2e6c6;
+          --warn: #f7cb7e;
+          --bad: #ffb3c1;
+          color-scheme: dark;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: var(--value-0);
+        background: var(--bg);
+        color: var(--text);
+        font:
+          var(--value-16px)/var(--value-1point-6) 'Sarabun',
+          'Leelawadee UI',
+          'Noto Sans Thai',
+          Thonburi,
+          Tahoma,
+          system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: var(--value-592px);
+        margin: auto;
+        padding: var(--value-24px) var(--value-16px);
+      }
+      h1,
+      h2,
+      p {
+        margin: var(--value-0);
+      }
+      h1 {
+        font-size: var(--value-28px);
+        line-height: var(--value-1point-4);
+      }
+      h2 {
+        font-size: var(--value-18px);
+        margin: var(--value-12px) var(--value-0) var(--value-8px);
+      }
+      .ornament {
+        display: block;
+        width: var(--value-80px);
+        height: var(--value-28px);
+        color: var(--brass);
+      }
+      header p {
+        color: var(--text-soft);
+      }
+      button {
+        font: inherit;
+        color: var(--text);
+        background: var(--surface-2);
+        border: var(--value-1px) solid var(--line);
+        border-radius: var(--value-12px);
+        min-height: var(--value-44px);
+        padding: var(--value-8px) var(--value-12px);
+        touch-action: manipulation;
+        cursor: pointer;
+      }
+      button.primary {
+        background: var(--action);
+        color: var(--action-ink);
+        border-color: var(--action);
+        font-weight: var(--value-700);
+        min-height: var(--value-52px);
+      }
+      button:focus-visible,
+      summary:focus-visible {
+        outline: var(--value-3px) solid var(--blue);
+        outline-offset: var(--value-2px);
+      }
+      .segments {
+        display: flex;
+        gap: var(--value-8px);
+        flex-wrap: wrap;
+      }
+      .segments button[aria-pressed='true'] {
+        background: var(--surface);
+        border-color: var(--blue);
+        outline: var(--value-1px) solid var(--blue);
+      }
+      #setTitle {
+        margin: var(--value-8px) var(--value-0);
+        color: var(--text-soft);
+      }
+      #setNotice,
+      #storageNotice {
+        margin: var(--value-8px) var(--value-0);
+      }
+      .progress {
+        margin: var(--value-16px) var(--value-0) var(--value-8px);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(var(--cols), var(--cell));
+        width: max-content;
+        max-width: var(--value-100pct);
+        margin: var(--value-0) auto;
+        background: var(--bg);
+      }
+      .cell,
+      .blank {
+        width: var(--cell);
+        height: var(--cell);
+      }
+      .cell {
+        position: relative;
+        border: var(--value-1px) solid var(--line-strong);
+        border-radius: var(--value-0);
+        background: var(--surface);
+        padding: var(--value-0);
+        min-height: var(--value-0);
+        font-size: var(--value-18px);
+        line-height: var(--value-1);
+        font-weight: var(--value-700);
+        color: var(--text);
+      }
+      .cell.is-entry {
+        background: var(--blue-soft);
+      }
+      .cell.is-selected {
+        outline: var(--value-2px) solid var(--action);
+        outline-offset: var(--value-neg-2px);
+        z-index: var(--value-1);
+      }
+      .cell.is-wrong {
+        box-shadow: inset var(--value-0) var(--value-0) var(--value-0) var(--value-2px)
+          var(--bad);
+      }
+      .cell.is-solved {
+        color: var(--text);
+      }
+      .cell .num {
+        background: var(--surface);
+        position: absolute;
+        top: var(--value-1px);
+        left: var(--value-2px);
+        font-size: var(--value-9px);
+        line-height: var(--value-1);
+        color: var(--brass);
+      }
+      .cell .cross {
+        position: absolute;
+        right: var(--value-1px);
+        top: var(--value-0);
+        font-size: var(--value-11px);
+        line-height: var(--value-1);
+        color: var(--bad);
+      }
+      .cell.is-finish {
+        background: var(--good);
+        color: var(--surface);
+        transition: background var(--finish-transition-ms);
+      }
+      .clue-bar {
+        background: var(--blue-soft);
+        border: var(--value-1px) solid var(--line);
+        border-radius: var(--value-12px);
+        padding: var(--value-12px);
+        margin: var(--value-16px) var(--value-0);
+        min-height: var(--value-52px);
+      }
+      .keyboard-hint {
+        font-size: var(--value-14px);
+        color: var(--text-soft);
+        margin: var(--value-0) var(--value-0) var(--value-8px);
+      }
+      .keyboard {
+        display: grid;
+        gap: var(--value-4px);
+        user-select: none;
+      }
+      .key-row {
+        display: flex;
+        justify-content: center;
+        gap: var(--value-2px);
+      }
+      .key-row button {
+        min-width: var(--value-25px);
+        flex: var(--value-1);
+        padding: var(--value-4px) var(--value-1px);
+        border-radius: var(--value-6px);
+        font-size: var(--value-14px);
+        font-weight: var(--value-700);
+      }
+      .clue-lists {
+        display: grid;
+        grid-template-columns: var(--value-1fr) var(--value-1fr);
+        gap: var(--value-16px);
+        margin: var(--value-16px) var(--value-0);
+      }
+      .clue-lists section {
+        min-width: var(--value-0);
+      }
+      .clue-lists button {
+        width: var(--value-100pct);
+        display: block;
+        text-align: left;
+        margin-bottom: var(--value-4px);
+        background: var(--surface);
+        line-height: var(--value-1point-6);
+      }
+      .clue-lists button.is-solved {
+        text-decoration: line-through;
+        color: var(--good);
+      }
+      .actions {
+        display: flex;
+        gap: var(--value-8px);
+        flex-wrap: wrap;
+        margin: var(--value-16px) var(--value-0);
+      }
+      .settings,
+      .finish,
+      #checkResult {
+        background: var(--surface);
+        border: var(--value-1px) solid var(--line);
+        border-radius: var(--value-18px);
+        padding: var(--value-16px);
+        margin-top: var(--value-16px);
+      }
+      .settings summary {
+        font-weight: var(--value-700);
+        min-height: var(--value-44px);
+        cursor: pointer;
+      }
+      #checkResult .is-pass {
+        color: var(--good);
+      }
+      #checkResult .is-fail {
+        color: var(--bad);
+      }
+      [data-slot]:empty,
+      #setNotice:empty,
+      #storageNotice:empty,
+      #feedback:empty {
+        display: none;
+      }
+      footer {
+        color: var(--text-soft);
+        font-size: var(--value-14px);
+        margin-top: var(--value-24px);
+      }
+      @media (max-width: 400px) {
+        .clue-lists {
+          grid-template-columns: var(--value-1fr);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cell.is-finish {
+          transition: none;
+        }
+      }
+      /* สีของเกม */
+      :root {
+        --term-ink: var(--text); /* สีคำศัพท์ */
+        --term-surface: var(--surface); /* พื้นการ์ดศัพท์ */
+        --term-accent: var(--blue); /* ขอบการ์ดศัพท์ */
+        --medal-fill: var(--action-soft); /* พื้นเหรียญที่ได้ */
+        /* ขนาดและระยะ */
+        --extra-gap: 8px; /* ระยะห่างหน้าแรก */
+        --extra-padding: 12px; /* ระยะในกรอบ */
+        --learn-icon: 28px; /* ขนาดภาพประกอบ */
+        --pop-ms: 200ms; /* เวลาเคลื่อนไหวคะแนน */
+        --pop-rise: 12px; /* ระยะขยับของคะแนน */
+        --stat-delay: 90ms; /* ระยะห่างของสถิติแต่ละบรรทัด */
+      }
+      [hidden] { display: none !important; }
+      .set-cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--extra-gap); }
+      .set-cards button { min-width: 0; text-align: start; background: var(--term-surface); }
+      .set-cards button[aria-pressed="true"] { border-color: var(--action); outline: 1px solid var(--action); }
+      .set-cards small { display: block; color: var(--text-soft); }
+      .term-card, .term-row { background: var(--term-surface); color: var(--term-ink); padding: var(--extra-padding); }
+      .term-card { border-inline-start: 3px solid var(--term-accent); }
+      .term-card:not([hidden]) { animation: term-in var(--pop-ms) ease-out; }
+      .term-row { border-block-end: 1px solid var(--line); }
+      .term-row p { margin: 0; }
+      #glossary details { margin-block: var(--extra-gap); }
+      #glossary summary { min-height: var(--value-44px); background: var(--surface-2); padding: var(--extra-gap); }
+      #collectionProgress { width: 100%; }
+      .medals svg, #badgeList svg, #instructions svg {
+        width: var(--learn-icon); height: var(--learn-icon); vertical-align: middle;
+      }
+      .medal.earned circle { fill: var(--medal-fill); }
+      .puzzle-stats { display: flex; gap: var(--extra-gap); align-items: baseline; }
+      #timer { margin-inline-start: auto; }
+      #toast { position: fixed; inset-block-end: var(--extra-gap); inset-inline-end: var(--extra-gap);
+        z-index: 5; background: var(--surface); border: 1px solid var(--blue); padding: var(--extra-padding); }
+      .score-pop { animation: term-in var(--pop-ms) ease-out; }
+      @keyframes term-in {
+        from { transform: translateY(var(--pop-rise)); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      #resultStats p { opacity: 0; transition: opacity var(--pop-ms);
+        transition-delay: calc(var(--stat-delay) * var(--result-order, 0)); }
+      #resultStats.is-revealed p, :root[data-reduce='true'] #resultStats p { opacity: 1; }
+      :root[data-reduce='true'] * { animation: none !important; transition: none !important; }
+      @media (prefers-reduced-motion: reduce) {
+        .score-pop, .term-card:not([hidden]) { animation: none; }
+        #resultStats p { opacity: 1; transition: none; }
+      }
+      :root[data-theme="dark"] {
+          --bg: #2a2140;
+          --surface: #362b52;
+          --surface-2: #1c2f3b;
+          --line: #5a4b7c;
+          --line-strong: #6f5f96;
+          --text: #f7effd;
+          --text-soft: #e4d9f4;
+          --muted: #bcaed6;
+          --action: #ff9cc2;
+          --action-ink: #3a1430;
+          --action-soft: #5a3354;
+          --blue: #b0c8ff;
+          --blue-soft: #3c4170;
+          --brass: #f7cb7e;
+          --good: #a2e6c6;
+          --warn: #f7cb7e;
+          --bad: #ffb3c1;
+          color-scheme: dark;
+      }
+      /* ═══ วิธีเล่นแบบหน้าต่างเกม ═══ */
+      .howto-screen {
+        position: relative; text-align: center; padding-block: var(--value-8px);
+        background:
+          radial-gradient(circle at 15% 20%, var(--action-soft) 0 6px, transparent 7px),
+          radial-gradient(circle at 85% 12%, var(--blue-soft) 0 8px, transparent 9px),
+          radial-gradient(circle at 78% 85%, var(--action-soft) 0 5px, transparent 6px),
+          radial-gradient(circle at 10% 88%, var(--blue-soft) 0 7px, transparent 8px);
+      }
+      .howto-title {
+        display: inline-block; font-size: 26px; color: var(--text);
+        background: var(--surface); border: 3px solid var(--action); border-radius: 999px;
+        padding: 6px 26px; box-shadow: 0 5px 0 var(--action-soft); transform: rotate(-2deg);
+        margin-block-end: var(--value-16px);
+      }
+      .howto-steps { display: grid; gap: 14px; margin-block: 18px 22px; padding: 0; list-style: none; }
+      .step {
+        position: relative; display: flex; align-items: center; gap: 12px; text-align: start;
+        background: var(--surface); border: 2px solid var(--line); border-radius: 22px;
+        padding: 12px 16px 12px 14px; box-shadow: 0 5px 0 var(--line-strong);
+        transition: transform var(--pop-ms) ease-out;
+      }
+      .step:nth-child(odd) { transform: rotate(-1deg); }
+      .step:nth-child(even) { transform: rotate(1deg); }
+      .step:hover { transform: translateY(-2px) rotate(0deg); }
+      .step-badge {
+        flex: 0 0 auto; display: grid; place-items: center; width: 34px; height: 34px;
+        border-radius: 50%; background: var(--step-color); color: var(--action-ink);
+        font-weight: 700; font-size: 16px; box-shadow: 0 3px 0 rgba(0,0,0,.12);
+      }
+      .step-icon { flex: 0 0 auto; font-size: 26px; line-height: 1; }
+      .step p { margin: 0; font-size: 16px; color: var(--text); }
+      .howto-screen > button.primary {
+        font-size: 18px; padding: 10px 28px; border-radius: 999px; border: none;
+        box-shadow: 0 5px 0 var(--line-strong); transition: transform var(--pop-ms) ease-out;
+      }
+      .howto-screen > button.primary:hover { transform: translateY(-2px); }
+      .howto-screen > button.primary:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--line-strong); }
+      @media (prefers-reduced-motion: reduce) {
+        .step, .step:hover, .howto-screen > button.primary:hover { transform: none; }
+      }
+      html[data-reduce='true'] .step, html[data-reduce='true'] .step:hover { transform: none; }
+      /* ═══ ชุดสีธีม ═══ */
+      :root[data-palette='mint'] {
+        --bg: #effaf5;
+        --surface: #ffffff;
+        --surface-2: #e8f7f0;
+        --line: #bfe5d3;
+        --line-strong: #98d0b5;
+        --text: #2f4b41;
+        --text-soft: #41594f;
+        --muted: #6f8c80;
+        --action: #3fa37e;
+        --action-ink: #ffffff;
+        --action-soft: #d8f3e6;
+        --blue: #5e9fb5;
+        --blue-soft: #e1f1f6;
+        --brass: #9a7a2a;
+        --good: #2f8a5f;
+        --warn: #9a7a2a;
+        --bad: #c0455a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-palette='mint']:not([data-theme='light']) {
+          --bg: #1a2e28;
+          --surface: #233b34;
+          --surface-2: #2b4840;
+          --line: #3d6358;
+          --line-strong: #4f7a6d;
+          --text: #e9f8f1;
+          --text-soft: #cde9dc;
+          --muted: #9fc6b5;
+          --action: #7fdcb4;
+          --action-ink: #0e2a20;
+          --action-soft: #2f5a4b;
+          --blue: #9dd3e6;
+          --blue-soft: #24434f;
+          --brass: #f0cd7a;
+          --good: #92e6bf;
+          --warn: #f0cd7a;
+          --bad: #ffb0bd;
+        }
+      }
+      :root[data-palette='mint'][data-theme='dark'] {
+        --bg: #1a2e28;
+        --surface: #233b34;
+        --surface-2: #2b4840;
+        --line: #3d6358;
+        --line-strong: #4f7a6d;
+        --text: #e9f8f1;
+        --text-soft: #cde9dc;
+        --muted: #9fc6b5;
+        --action: #7fdcb4;
+        --action-ink: #0e2a20;
+        --action-soft: #2f5a4b;
+        --blue: #9dd3e6;
+        --blue-soft: #24434f;
+        --brass: #f0cd7a;
+        --good: #92e6bf;
+        --warn: #f0cd7a;
+        --bad: #ffb0bd;
+      }
+      :root[data-palette='lavender'] {
+        --bg: #f7f3ff;
+        --surface: #ffffff;
+        --surface-2: #efe8ff;
+        --line: #d9ccf5;
+        --line-strong: #b9a3e6;
+        --text: #3f3160;
+        --text-soft: #54467a;
+        --muted: #8473a8;
+        --action: #8b5cd6;
+        --action-ink: #ffffff;
+        --action-soft: #ece2ff;
+        --blue: #6f8fd9;
+        --blue-soft: #e6ecfc;
+        --brass: #a9782e;
+        --good: #3d9a77;
+        --warn: #a9782e;
+        --bad: #c24a6a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-palette='lavender']:not([data-theme='light']) {
+          --bg: #221b38;
+          --surface: #2e2650;
+          --surface-2: #372e5e;
+          --line: #4d4280;
+          --line-strong: #645aa0;
+          --text: #f3eeff;
+          --text-soft: #ddd3f7;
+          --muted: #aea2d4;
+          --action: #c3a4ff;
+          --action-ink: #220f3d;
+          --action-soft: #443872;
+          --blue: #b3c6ff;
+          --blue-soft: #303a6b;
+          --brass: #f2cb7f;
+          --good: #9ee6c6;
+          --warn: #f2cb7f;
+          --bad: #ffb3c8;
+        }
+      }
+      :root[data-palette='lavender'][data-theme='dark'] {
+        --bg: #221b38;
+        --surface: #2e2650;
+        --surface-2: #372e5e;
+        --line: #4d4280;
+        --line-strong: #645aa0;
+        --text: #f3eeff;
+        --text-soft: #ddd3f7;
+        --muted: #aea2d4;
+        --action: #c3a4ff;
+        --action-ink: #220f3d;
+        --action-soft: #443872;
+        --blue: #b3c6ff;
+        --blue-soft: #303a6b;
+        --brass: #f2cb7f;
+        --good: #9ee6c6;
+        --warn: #f2cb7f;
+        --bad: #ffb3c8;
+      }
+      :root[data-palette='sky'] {
+        --bg: #eef7ff;
+        --surface: #ffffff;
+        --surface-2: #e4f1fc;
+        --line: #bddcf2;
+        --line-strong: #8fc3e6;
+        --text: #1f3b55;
+        --text-soft: #34506b;
+        --muted: #6b8aa6;
+        --action: #3b8fd0;
+        --action-ink: #ffffff;
+        --action-soft: #dcecfb;
+        --blue: #5a9be0;
+        --blue-soft: #e0eefc;
+        --brass: #a07a2f;
+        --good: #2f9a7a;
+        --warn: #a07a2f;
+        --bad: #d0485e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-palette='sky']:not([data-theme='light']) {
+          --bg: #172a3d;
+          --surface: #1f3750;
+          --surface-2: #27425e;
+          --line: #365a7a;
+          --line-strong: #4b7597;
+          --text: #eaf5ff;
+          --text-soft: #cfe3f5;
+          --muted: #9dbdd6;
+          --action: #8cc9ff;
+          --action-ink: #0b2236;
+          --action-soft: #2b4d6b;
+          --blue: #a6d2ff;
+          --blue-soft: #213d57;
+          --brass: #f2cd80;
+          --good: #94e3c6;
+          --warn: #f2cd80;
+          --bad: #ffb3bf;
+        }
+      }
+      :root[data-palette='sky'][data-theme='dark'] {
+        --bg: #172a3d;
+        --surface: #1f3750;
+        --surface-2: #27425e;
+        --line: #365a7a;
+        --line-strong: #4b7597;
+        --text: #eaf5ff;
+        --text-soft: #cfe3f5;
+        --muted: #9dbdd6;
+        --action: #8cc9ff;
+        --action-ink: #0b2236;
+        --action-soft: #2b4d6b;
+        --blue: #a6d2ff;
+        --blue-soft: #213d57;
+        --brass: #f2cd80;
+        --good: #94e3c6;
+        --warn: #f2cd80;
+        --bad: #ffb3bf;
+      }
+      :root[data-palette='butter'] {
+        --bg: #fffbe9;
+        --surface: #ffffff;
+        --surface-2: #fff4cc;
+        --line: #f3e2a1;
+        --line-strong: #e5c86a;
+        --text: #4a3d17;
+        --text-soft: #5e5024;
+        --muted: #8d7f4f;
+        --action: #f2b93b;
+        --action-ink: #3b2a05;
+        --action-soft: #fff0c2;
+        --blue: #5f8fbf;
+        --blue-soft: #e6f0fa;
+        --brass: #a06b14;
+        --good: #3d8f5e;
+        --warn: #a06b14;
+        --bad: #c44a3c;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-palette='butter']:not([data-theme='light']) {
+          --bg: #2d2612;
+          --surface: #3a3218;
+          --surface-2: #463d20;
+          --line: #5f5330;
+          --line-strong: #7a6b40;
+          --text: #fff8e1;
+          --text-soft: #efe2b5;
+          --muted: #c9b985;
+          --action: #f7c85a;
+          --action-ink: #2d2005;
+          --action-soft: #5a4a1c;
+          --blue: #a7c9ea;
+          --blue-soft: #2f4256;
+          --brass: #f5d27f;
+          --good: #a3e0b5;
+          --warn: #f5d27f;
+          --bad: #ffb8a8;
+        }
+      }
+      :root[data-palette='butter'][data-theme='dark'] {
+        --bg: #2d2612;
+        --surface: #3a3218;
+        --surface-2: #463d20;
+        --line: #5f5330;
+        --line-strong: #7a6b40;
+        --text: #fff8e1;
+        --text-soft: #efe2b5;
+        --muted: #c9b985;
+        --action: #f7c85a;
+        --action-ink: #2d2005;
+        --action-soft: #5a4a1c;
+        --blue: #a7c9ea;
+        --blue-soft: #2f4256;
+        --brass: #f5d27f;
+        --good: #a3e0b5;
+        --warn: #f5d27f;
+        --bad: #ffb8a8;
+      }
+      /* ═══ ฟอนต์ Sarabun ทุกส่วนของแอป ═══ */
+      :root { --font-main: 'Sarabun', 'Leelawadee UI', 'Noto Sans Thai', system-ui, sans-serif; }
+      *, *::before, *::after { font-family: var(--font-main); }
+      /* ═══ หน้าต่างวิธีเล่นก่อนเข้าเกม ═══ */
+      .rules-dialog:not([hidden]) {
+        position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 16px;
+        background: rgba(20, 12, 30, .45);
+      }
+      .rules-card {
+        width: min(440px, 100%); max-height: 92vh; overflow: auto; text-align: center;
+        background: var(--surface); border: 3px solid var(--line-strong); border-radius: 28px;
+        padding: 20px 18px 18px; box-shadow: 0 8px 0 var(--line-strong);
+      }
+      .rules-card .howto-title { font-size: 24px; }
+      .rules-card .howto-steps { margin-block: 14px 16px; }
+      .rules-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .rules-skip { display: flex; justify-content: center; align-items: center; gap: 6px;
+        margin-top: 12px; font-size: 14px; color: var(--text-soft); }
+      /* ═══ ปุ่มสลับโทนสว่าง/มืดบนหน้าแรก ═══ */
+      header { position: relative; }
+      .theme-toggle {
+        position: absolute; inset-block-start: 0; inset-inline-end: 0;
+        border-radius: 999px; padding: 6px 14px; font-size: 14px;
+        background: var(--surface); border: 2px solid var(--action); color: var(--text);
+        box-shadow: 0 3px 0 var(--action-soft);
+      }
+      /* ═══ สีหลากหลายในธีมเดียว ═══ */
+      header h1::after {
+        content: ''; display: block; width: 140px; height: 8px; margin-top: 8px; border-radius: 99px;
+        background: linear-gradient(90deg, var(--action), var(--blue), var(--good), var(--brass));
+      }
+      .set-cards button { border-inline-start: 6px solid var(--card-accent, var(--line)); }
+      .set-cards button[aria-pressed='true'] { border-inline-start-color: var(--card-accent, var(--action)); }
+      .set-cards button:nth-child(4n+1) { --card-accent: var(--action); }
+      .set-cards button:nth-child(4n+2) { --card-accent: var(--blue); }
+      .set-cards button:nth-child(4n+3) { --card-accent: var(--good); }
+      .set-cards button:nth-child(4n+4) { --card-accent: var(--brass); }
+      .segments button:nth-child(3n+2) { background: color-mix(in srgb, var(--blue) 16%, var(--surface)); }
+      .segments button:nth-child(3n+3) { background: color-mix(in srgb, var(--good) 16%, var(--surface)); }
+      .segments button[aria-pressed='true'] { background: var(--action); color: var(--action-ink); }
+      .actions button:not(.primary):nth-child(3n+2) { background: color-mix(in srgb, var(--blue) 18%, var(--surface)); }
+      .actions button:not(.primary):nth-child(3n+3) { background: color-mix(in srgb, var(--brass) 18%, var(--surface)); }
+      .actions button:not(.primary):nth-child(4n+1) { background: color-mix(in srgb, var(--good) 14%, var(--surface)); }
+      /* ═══ ชุดสี trem (ค่าเริ่มต้น) ═══ */
+      :root[data-palette='trem'] {
+        --bg: #f1ecfa;
+        --surface: #ffffff;
+        --surface-2: #ebe3f7;
+        --line: #d6c9ee;
+        --line-strong: #b7a2da;
+        --text: #2b2240;
+        --text-soft: #4a3d66;
+        --muted: #7d6e9c;
+        --action: #7b57b8;
+        --action-ink: #ffffff;
+        --action-soft: #ece3fb;
+        --blue: #5b7fcf;
+        --blue-soft: #e4ebfb;
+        --brass: #b07a2a;
+        --good: #3f9a74;
+        --warn: #b07a2a;
+        --bad: #c4456a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-palette='trem']:not([data-theme='light']) {
+          --bg: #1f1833;
+          --surface: #2b2245;
+          --surface-2: #352b56;
+          --line: #4a3d70;
+          --line-strong: #62528f;
+          --text: #f1ecff;
+          --text-soft: #d9cff2;
+          --muted: #aa9ccc;
+          --action: #b596ec;
+          --action-ink: #1d1232;
+          --action-soft: #3d3064;
+          --blue: #a8bff5;
+          --blue-soft: #2b3b66;
+          --brass: #f0c97c;
+          --good: #9ee0bf;
+          --warn: #f0c97c;
+          --bad: #ffb0c8;
+        }
+      }
+      :root[data-palette='trem'][data-theme='dark'] {
+        --bg: #1f1833;
+        --surface: #2b2245;
+        --surface-2: #352b56;
+        --line: #4a3d70;
+        --line-strong: #62528f;
+        --text: #f1ecff;
+        --text-soft: #d9cff2;
+        --muted: #aa9ccc;
+        --action: #b596ec;
+        --action-ink: #1d1232;
+        --action-soft: #3d3064;
+        --blue: #a8bff5;
+        --blue-soft: #2b3b66;
+        --brass: #f0c97c;
+        --good: #9ee0bf;
+        --warn: #f0c97c;
+        --bad: #ffb0c8;
+      }
+      /* ═══ หน้าปก (cover) ═══ */
+      body { background: var(--bg); }
+      .cv-cover {
+        position: relative; overflow: hidden; min-height: 86vh; border-radius: 28px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-align: center; padding: 40px 20px; background: var(--surface-2);
+        isolation: isolate;
+      }
+      .cv-cover::before {
+        content: ''; position: absolute; inset: 0; z-index: -1; opacity: .55;
+        background-image:
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px);
+        background-size: 46px 46px;
+        -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 80%);
+                mask-image: radial-gradient(ellipse at center, #000 35%, transparent 80%);
+      }
+      .cv-tools { position: absolute; inset-block-start: 14px; inset-inline-end: 14px; display: flex; gap: 10px; }
+      .cv-tool {
+        width: 46px; height: 46px; border-radius: 50%; padding: 0; font-size: 20px; line-height: 1;
+        background: var(--action); color: var(--action-ink); border: none;
+        box-shadow: 0 4px 0 var(--action-soft); transition: transform var(--pop-ms) ease-out;
+      }
+      .cv-tool:hover { transform: rotate(-12deg) scale(1.06); }
+      .cv-deco { position: absolute; inset: 0; pointer-events: none; }
+      .cv-note { position: absolute; color: var(--action); font-size: 34px; opacity: .6;
+        animation: cv-float 6s ease-in-out infinite; }
+      .cv-note.n1 { top: 14%; left: 10%; }
+      .cv-note.n2 { top: 22%; right: 12%; color: var(--blue); animation-delay: -1.5s; }
+      .cv-note.n3 { bottom: 26%; left: 16%; color: var(--brass); animation-delay: -3s; }
+      .cv-note.n4 { bottom: 14%; right: 18%; color: var(--good); animation-delay: -4.5s; }
+      .cv-note.n5 { top: 46%; right: 6%; color: var(--blue); animation-delay: -2s; font-size: 26px; }
+      .cv-spark { position: absolute; color: var(--action); font-size: 18px; animation: cv-twinkle 3s ease-in-out infinite; }
+      .cv-spark.s1 { top: 10%; left: 42%; }
+      .cv-spark.s2 { top: 30%; right: 30%; animation-delay: -1s; }
+      .cv-spark.s3 { bottom: 34%; left: 30%; animation-delay: -2s; }
+      .cv-logo { margin: 0; line-height: .95; position: relative; animation: cv-bob 5s ease-in-out infinite; }
+      .cv-trem, .cv-cross {
+        display: block; font-family: var(--font-main); color: var(--text);
+        text-shadow: -3px 0 0 #fff, 3px 0 0 #fff, 0 -3px 0 #fff, 0 3px 0 #fff, 0 7px 0 var(--action-soft);
+      }
+      .cv-trem { font-size: clamp(72px, 16vw, 112px); font-weight: 700; letter-spacing: -2px; }
+      .cv-cross { font-size: clamp(44px, 10vw, 64px); font-weight: 600; color: var(--action); margin-top: -6px; }
+      .cv-rule { display: block; width: 72%; height: 9px; margin: 8px auto 0; border-radius: 99px;
+        background: #e07bc0; box-shadow: 0 3px 0 #fff; }
+      .cv-tagline { margin-top: 18px; font-size: 22px; color: var(--text-soft); font-family: var(--font-main); }
+      .cv-start {
+        margin-top: 28px; font-size: 22px; padding: 14px 40px; border-radius: 999px; border: none;
+        background: var(--action); color: var(--action-ink); font-family: var(--font-main);
+        box-shadow: 0 6px 0 var(--action-soft); animation: cv-pulse 2.6s ease-in-out infinite;
+        transition: transform var(--pop-ms) ease-out;
+      }
+      .cv-start:hover { transform: translateY(-3px) rotate(-1deg); }
+      .cv-start:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--action-soft); }
+      .cv-play { display: inline-block; font-size: 16px; margin-inline-end: 6px; }
+      .cv-bubble { position: absolute; inset-inline-end: 6%; inset-block-end: 8%; margin: 0;
+        background: var(--surface); border-radius: 22px; padding: 10px 16px; font-size: 15px;
+        box-shadow: 0 4px 0 var(--line); color: var(--text-soft); animation: cv-float 5s ease-in-out infinite; }
+
+      @keyframes cv-float { 0%,100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-14px) rotate(6deg); } }
+      @keyframes cv-bob { 0%,100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-6px) rotate(1deg); } }
+      @keyframes cv-twinkle { 0%,100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+      @keyframes cv-pulse { 0%,100% { box-shadow: 0 6px 0 var(--action-soft), 0 0 0 0 var(--action-soft); }
+        50% { box-shadow: 0 6px 0 var(--action-soft), 0 0 0 10px transparent; } }
+
+      /* ═══ หน้าต่างวิธีเล่นก่อนเข้าเกม ═══ */
+      .rules-card { position: relative; animation: rc-pop .5s cubic-bezier(.2,1.4,.4,1) both; }
+      .rules-card::before, .rules-card::after {
+        position: absolute; pointer-events: none; color: var(--action); opacity: .5; font-size: 28px;
+        animation: cv-float 5s ease-in-out infinite;
+      }
+      .rules-card::before { content: '♪'; top: -14px; inset-inline-start: 18px; }
+      .rules-card::after { content: '♫'; bottom: -12px; inset-inline-end: 22px; color: var(--blue); animation-delay: -2s; }
+      .rules-card .howto-title { animation: rc-wobble 4s ease-in-out infinite; }
+      .rules-card .step { animation: rc-slide .45s ease-out backwards; }
+      .rules-card .step:nth-child(1) { animation-delay: .12s; }
+      .rules-card .step:nth-child(2) { animation-delay: .22s; }
+      .rules-card .step:nth-child(3) { animation-delay: .32s; }
+      .rules-card .step:nth-child(4) { animation-delay: .42s; }
+      .rules-card .step-icon { display: inline-block; animation: rc-bounce 2.4s ease-in-out infinite; }
+      .rules-card .step:nth-child(2) .step-icon { animation-delay: -.6s; }
+      .rules-card .step:nth-child(3) .step-icon { animation-delay: -1.2s; }
+      .rules-card .step:nth-child(4) .step-icon { animation-delay: -1.8s; }
+      #rulesStart { animation: cv-pulse 2.6s ease-in-out infinite; }
+
+      @keyframes rc-pop { from { opacity: 0; transform: scale(.85) translateY(14px); } to { opacity: 1; transform: none; } }
+      @keyframes rc-slide { from { opacity: 0; transform: translateX(-18px); } }
+      @keyframes rc-wobble { 0%,100% { transform: rotate(-2deg); } 50% { transform: rotate(1.5deg); } }
+      @keyframes rc-bounce { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-4px) scale(1.08); } }
+
+      /* ปิดการเคลื่อนไหวเมื่อผู้ใช้ตั้งค่าไว้ */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+      }
+      html[data-reduce='true'] *, html[data-reduce='true'] *::before, html[data-reduce='true'] *::after {
+        animation: none !important; transition: none !important;
+      }
+      @media (max-width: 420px) {
+        .cv-bubble { position: static; margin-top: 18px; }
+      }
+      /* ═══ พื้นหลังหน้าเล่น ═══ */
+      [data-screen='play'] {
+        position: relative; overflow: hidden; border-radius: 28px; padding: 18px;
+        background: var(--surface-2);
+      }
+      [data-screen='play']::before {
+        content: ''; position: absolute; inset: 0; z-index: 0; opacity: .5; pointer-events: none;
+        background-image:
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px);
+        background-size: 46px 46px;
+        -webkit-mask-image: radial-gradient(ellipse at center, #000 40%, transparent 85%);
+                mask-image: radial-gradient(ellipse at center, #000 40%, transparent 85%);
+      }
+      [data-screen='play'] > *:not(.pl-deco) { position: relative; z-index: 1; }
+      .pl-deco { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+      .pl-note { position: absolute; color: var(--action); opacity: .35; font-size: 30px;
+        animation: cv-float 7s ease-in-out infinite; }
+      .pl-note.a { top: 8%; left: 4%; }
+      .pl-note.b { top: 12%; right: 6%; color: var(--blue); animation-delay: -2s; }
+      .pl-note.c { bottom: 16%; left: 6%; color: var(--brass); animation-delay: -4s; }
+      .pl-note.d { bottom: 10%; right: 8%; color: var(--good); animation-delay: -5s; }
+      .pl-spark { position: absolute; top: 45%; right: 3%; color: var(--action); opacity: .5;
+        font-size: 18px; animation: cv-twinkle 3s ease-in-out infinite; }
+
+      /* ═══ เอฟเฟกต์ระหว่างเล่น ═══ */
+      #fxLayer { position: fixed; inset: 0; pointer-events: none; z-index: 50; overflow: hidden; }
+      .fx-piece { position: fixed; width: 9px; height: 14px; border-radius: 3px; will-change: transform; }
+      .fx-piece:nth-child(3n) { width: 12px; height: 12px; border-radius: 50%; }
+      .fx-float { position: fixed; font-weight: 700; font-size: 22px; white-space: nowrap;
+        color: var(--action-ink); background: var(--action); padding: 4px 14px; border-radius: 999px;
+        box-shadow: 0 3px 0 var(--action-soft); }
+      /* ═══ ปุ่มกลับไปหน้าเริ่มเกม ═══ */
+      .cv-back {
+        display: inline-block; margin-block-end: 12px; padding: 6px 14px; font-size: 14px;
+        border-radius: 999px; background: var(--surface); color: var(--text);
+        border: 2px solid var(--line-strong); box-shadow: 0 3px 0 var(--line);
+      }
+      .cv-back:hover { border-color: var(--action); }
+      /* ═══ เด่นชัดเมื่อเลือกชุดคำศัพท์ ═══ */
+      .set-cards button {
+        position: relative; transition: transform var(--pop-ms) ease-out, box-shadow var(--pop-ms) ease-out, background var(--pop-ms) ease-out;
+      }
+      .set-cards button:hover { transform: translateY(-2px); }
+      .set-cards button[aria-pressed='true'] {
+        border: 3px solid var(--card-accent, var(--action));
+        background: color-mix(in srgb, var(--card-accent, var(--action)) 16%, var(--surface));
+        box-shadow: 0 6px 0 var(--card-accent, var(--action)),
+          0 0 0 4px color-mix(in srgb, var(--card-accent, var(--action)) 28%, transparent);
+        transform: translateY(-4px) scale(1.02);
+        outline: none;
+      }
+      .set-cards button[aria-pressed='true']::after {
+        content: '✓'; position: absolute; top: -12px; inset-inline-end: -10px;
+        width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+        background: var(--card-accent, var(--action)); color: var(--action-ink);
+        font-weight: 700; font-size: 16px; box-shadow: 0 3px 0 rgba(0,0,0,.15);
+      }
+      .set-cards button[aria-pressed='true'] small { color: var(--text); font-weight: 600; }
+      /* ═══ จัดหน้าหลักใหม่ให้เป็นระเบียบ ═══ */
+      [data-screen='home'] { display: flex; flex-direction: column; gap: 16px; }
+      [data-screen='home'] > * { margin: 0; }
+      [data-screen='home'] .cv-back { align-self: flex-start; margin-block-end: 0; }
+      [data-screen='home'] > header { padding-block-end: 4px; }
+      [data-screen='home'] > header p { color: var(--text-soft); margin-top: 6px; }
+      [data-screen='home'] h2 { display: flex; align-items: center; gap: 10px; font-size: 20px; margin-top: 6px; }
+      [data-screen='home'] h2::before {
+        content: ''; flex: 0 0 auto; width: 8px; height: 22px; border-radius: 6px;
+        background: linear-gradient(var(--action), var(--blue));
+      }
+      #sets { gap: 12px; }
+      #sets button { padding: 14px 16px; border-radius: 18px; }
+      #sets small { margin-top: 2px; }
+      #modePicker {
+        display: flex; gap: 4px; padding: 4px; background: var(--surface-2);
+        border: 1px solid var(--line); border-radius: 999px;
+      }
+      #modePicker button {
+        flex: 1; border: none; background: transparent; box-shadow: none; border-radius: 999px;
+        padding: 10px 8px; color: var(--text-soft); font-weight: 600;
+      }
+      #modePicker button[aria-pressed='true'] {
+        background: var(--action); color: var(--action-ink); box-shadow: 0 3px 0 var(--action-soft);
+      }
+      #modeAbout {
+        background: var(--surface); border: 1px dashed var(--line-strong); border-radius: 16px;
+        padding: 10px 14px; color: var(--text-soft); font-size: 15px; margin-top: 4px;
+      }
+      #homeBest {
+        align-self: flex-start; background: var(--blue-soft); color: var(--text);
+        padding: 6px 14px; border-radius: 999px; font-size: 14px;
+      }
+      [data-screen='home'] .actions {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      }
+      [data-screen='home'] .actions > button { min-height: 48px; border-radius: 16px; font-weight: 600; }
+      [data-screen='home'] .actions > button.primary {
+        grid-column: 1 / -1; min-height: 56px; font-size: 20px; border-radius: 999px;
+        box-shadow: 0 6px 0 var(--action-soft);
+      }
+      #medals { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+      details.settings {
+        background: var(--surface); border: 2px solid var(--line); border-radius: 20px; padding: 12px 16px;
+      }
+      details.settings summary { cursor: pointer; font-weight: 700; }
+      footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 4px; }
+      @media (max-width: 380px) {
+        #sets { grid-template-columns: 1fr; }
+        [data-screen='home'] .actions { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section data-screen="cover" class="cv-cover">
+        <div class="cv-tools">
+          <button type="button" id="coverSettings" class="cv-tool" aria-label="ตั้งค่า">⚙</button>
+          <button type="button" id="coverHelp" class="cv-tool" aria-label="วิธีเล่น">?</button>
+        </div>
+        <div class="cv-deco" aria-hidden="true">
+          <span class="cv-note n1">♪</span><span class="cv-note n2">♫</span><span class="cv-note n3">♩</span>
+          <span class="cv-note n4">♫</span><span class="cv-note n5">♪</span>
+          <span class="cv-spark s1">✦</span><span class="cv-spark s2">✧</span><span class="cv-spark s3">✦</span>
+        </div>
+        <h1 tabindex="-1" class="cv-logo"><span class="cv-trem">trem</span><span class="cv-cross">crossword</span><span class="cv-rule" aria-hidden="true"></span></h1>
+        <p class="cv-tagline">Solve. Learn. Play!</p>
+        <button type="button" id="coverStart" class="cv-start"><span class="cv-play" aria-hidden="true">▶</span> Start Game</button>
+        <p class="cv-bubble">ทดสอบความรู้ศัพท์ดนตรีของคุณ ♡</p>
+      </section>
+      <section data-screen="home" hidden>
+        <button type="button" id="backHome" class="cv-back">← กลับหน้าเริ่มเกม</button>
+        <header><h1 tabindex="-1">ปริศนาศัพท์ดนตรี</h1><p>ไขศัพท์ดนตรี แล้วฟังว่าคำนั้นเป็นเสียงแบบไหน</p>
+          <button id="quickTheme" type="button" class="theme-toggle" aria-live="polite"></button></header>
+        <h2>ชุดคำศัพท์</h2>
+        <div id="sets" class="set-cards"></div>
+        <h2>เลือกโหมด</h2>
+        <div id="modePicker" class="segments"></div>
+        <p id="modeAbout"></p>
+        <div id="slotHome" data-slot="home"></div>
+        <p id="homeBest"></p>
+        <div class="actions">
+          <button id="start" class="primary">เริ่มเล่น</button>
+          <button id="newHome">ตารางใหม่</button>
+          <button id="openGlossary">สมุดศัพท์</button>
+          <button id="openHowto">วิธีเล่น</button>
+          <button id="openBadges">เหรียญของฉัน</button>
+        </div>
+        <div id="medals" class="medals"></div>
+        <p id="storageNotice" role="status"></p>
+      </section>
+      <section data-screen="play" hidden>
+        <button type="button" id="backPlay" class="cv-back">← กลับหน้าเริ่มเกม</button>
+        <div class="pl-deco" aria-hidden="true"><span class="pl-note a">♪</span><span class="pl-note b">♫</span><span class="pl-note c">♩</span><span class="pl-note d">♫</span><span class="pl-spark">✦</span></div>
+        <h1 tabindex="-1">ปริศนาศัพท์ดนตรี</h1>
+        <p id="setTitle"></p>
+        <p id="setNotice"></p>
+        <p class="puzzle-stats">
+          คะแนน <strong id="score">0</strong>
+          <span id="timer" hidden>เวลา <strong id="timerValue"></strong></span>
+        </p>
+      <div class="progress">
+        <strong id="progress"></strong>
+        <div id="slotHud" data-slot="hud"></div>
+      </div>
+      <div id="grid" class="grid" role="grid" aria-label="ตารางปริศนา"></div>
+      <div id="clueBar" class="clue-bar" aria-live="polite">
+        แตะช่องในตาราง หรือแตะคำใบ้เพื่อเริ่ม
+      </div>
+      <p class="keyboard-hint">คีย์บอร์ด: Tab เปลี่ยนคำ · Esc ไปที่ปุ่มตรวจคำตอบ</p>
+      <div id="keyboard" class="keyboard" aria-label="แป้นตัวอักษร"></div>
+      <section id="termCard" class="term-card" hidden></section>
+      <div class="clue-lists">
+        <section>
+          <h2>แนวนอน</h2>
+          <div id="across"></div>
+        </section>
+        <section>
+          <h2>แนวตั้ง</h2>
+          <div id="down"></div>
+        </section>
+      </div>
+      <p id="feedback" aria-live="polite"></p>
+      <div class="actions">
+        <button id="check" class="primary">ตรวจคำตอบ</button
+        ><button id="restart">เริ่มชุดนี้ใหม่</button>
+        <button id="hintLetter">ใบ้ตัวอักษร (3)</button>
+        <button id="revealWord">เผยทั้งคำ (1)</button>
+        <button id="quit">ออก</button>
+        <div id="slotActions" data-slot="actions"></div>
+      </div>
+      <div id="slotPanel" data-slot="panel"></div>
+      </section>
+      <section data-screen="result" hidden>
+        <h1 id="resultTitle" tabindex="-1"></h1>
+        <h2 id="resultScore"></h2>
+        <div id="resultStats"></div>
+        <h2>คำที่ได้เรียนในตานี้</h2>
+        <div id="resultWords"></div>
+        <div class="actions">
+          <button id="newResult" class="primary">ตารางใหม่</button>
+          <button id="otherSet">เลือกชุดอื่น</button>
+          <button id="resultGlossary">สมุดศัพท์</button>
+        </div>
+        <div id="slotResult" data-slot="result"></div>
+      </section>
+      <section data-screen="glossary" hidden>
+        <h1 tabindex="-1">สมุดศัพท์</h1>
+        <p id="collectionCount"></p>
+        <progress id="collectionProgress"></progress>
+        <div id="glossary"></div>
+        <button id="closeGlossary">กลับหน้าแรก</button>
+      </section>
+      <section data-screen="howto" class="howto-screen" hidden>
+        <h1 tabindex="-1" class="howto-title">วิธีเล่น</h1>
+        <div id="instructions" class="howto-steps"></div>
+        <button id="closeHowto" class="primary">กลับหน้าแรก</button>
+      </section>
+      <section data-screen="badges" hidden>
+        <h1 tabindex="-1">เหรียญของฉัน</h1>
+        <ul id="badgeList"></ul>
+        <button id="closeBadges">กลับหน้าแรก</button>
+      </section>
+      <div id="rulesDialog" class="rules-dialog" hidden>
+        <div class="rules-card" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
+          <h2 id="rulesTitle" class="howto-title" tabindex="-1">วิธีเล่น</h2>
+          <div id="rulesSteps" class="howto-steps"></div>
+          <div class="rules-actions">
+            <button id="rulesStart" class="primary">เข้าเล่นเลย</button>
+            <button id="rulesClose">ปิด</button>
+          </div>
+          <label class="rules-skip"><input type="checkbox" id="rulesSkip"> ไม่ต้องแสดงอีก</label>
+        </div>
+      </div>
+      <p id="toast" role="status" aria-live="polite" hidden></p>
+      <details class="settings">
+        <summary>ตั้งค่า</summary>
+        <label for="volume">ระดับเสียง</label>
+        <input type="range" id="volume" min="0" max="100" value="25">
+        <button id="testSound">ทดสอบเสียง</button>
+        <label for="theme">ธีม</label>
+        <select id="theme"><option value="auto">อัตโนมัติ</option>
+          <option value="light">สว่าง</option><option value="dark">มืด</option></select>
+        <label for="palette">สีธีม</label>
+        <select id="palette"><option value="trem">ทรีม (ค่าเริ่มต้น)</option><option value="sakura">ซากุระ</option><option value="mint">มินต์</option><option value="lavender">ลาเวนเดอร์</option><option value="sky">ท้องฟ้า</option><option value="butter">ครีมเหลือง</option></select>
+        <label><input id="reduce" type="checkbox"> ลดการเคลื่อนไหว</label>
+        <button id="clearStats">ล้างข้อมูลของเกมนี้</button>
+        <button id="selfcheck">ตรวจระบบ</button>
+        <div id="checkResult" hidden></div>
+      </details>
+      <footer>ปริศนาศัพท์ดนตรี · สร้างด้วย AI ช่วย · วิชา 3500230</footer>
+    </main>
+    <script>
+      (function () {
+        'use strict';
+        /* ═══════════ โซน A · ข้อมูล (แก้ได้) ═══════════ */
+        /* ชุดคำศัพท์: id คือรหัส title คือชื่อ level คือระดับ words คือรายการที่ a เป็นคำตอบและ c เป็นคำใบ้ */
+        var WORD_SETS = [
+          {
+            id: 'speed',
+            title: 'ความเร็วและความดัง',
+            level: 'ง่าย',
+            words: [
+              { a: 'LARGO', c: 'ช้ามากและกว้าง' },
+              { a: 'ADAGIO', c: 'ช้า สบาย ๆ' },
+              { a: 'ANDANTE', c: 'ความเร็วระดับก้าวเดิน' },
+              { a: 'MODERATO', c: 'ความเร็วปานกลาง' },
+              { a: 'ALLEGRO', c: 'เร็วและร่าเริง' },
+              { a: 'VIVACE', c: 'เร็วอย่างมีชีวิตชีวา' },
+              { a: 'PRESTO', c: 'เร็วมาก' },
+              { a: 'LENTO', c: 'ช้า' },
+              { a: 'PIANO', c: 'เล่นเบา (สัญลักษณ์ p)' },
+              { a: 'FORTE', c: 'เล่นดัง (สัญลักษณ์ f)' },
+              { a: 'MEZZO', c: 'คำที่แปลว่า "ปานกลาง" ใช้นำหน้า piano หรือ forte' },
+              { a: 'CRESCENDO', c: 'ค่อย ๆ ดังขึ้น' }
+            ]
+          },
+          {
+            id: 'touch',
+            title: 'วิธีเล่นและอารมณ์',
+            level: 'กลาง',
+            words: [
+              { a: 'LEGATO', c: 'เล่นให้เสียงต่อเนื่องเชื่อมกัน' },
+              { a: 'STACCATO', c: 'เล่นเสียงสั้น ขาดจากกัน' },
+              { a: 'TENUTO', c: 'ลากเสียงให้เต็มค่าโน้ต' },
+              { a: 'MARCATO', c: 'เน้นเสียงให้ชัดทุกตัว' },
+              { a: 'FERMATA', c: 'ยืดเสียงหรือตัวหยุดค้างไว้นานกว่าปกติ' },
+              { a: 'RUBATO', c: 'ยืดหยุ่นจังหวะตามอารมณ์' },
+              { a: 'DOLCE', c: 'เล่นอย่างอ่อนหวาน' },
+              { a: 'CANTABILE', c: 'เล่นให้ไพเราะดั่งเสียงร้อง' },
+              { a: 'VIBRATO', c: 'ทำให้เสียงสั่นเล็กน้อย' },
+              { a: 'TREMOLO', c: 'รัวเสียงซ้ำเร็ว ๆ' },
+              { a: 'PIZZICATO', c: 'ดีดสายด้วยนิ้ว (เครื่องสาย)' },
+              { a: 'ARPEGGIO', c: 'เล่นโน้ตในคอร์ดทีละตัว' }
+            ]
+          },
+          {
+            id: 'form',
+            title: 'รูปแบบและการแสดง',
+            level: 'ยาก',
+            words: [
+              { a: 'SONATA', c: 'บทเพลงสำหรับเครื่องดนตรีเดี่ยว มักมีหลายท่อน' },
+              { a: 'CADENZA', c: 'ช่วงที่ผู้เล่นเดี่ยวแสดงฝีมืออย่างอิสระ' },
+              { a: 'SCHERZO', c: 'ท่อนเพลงเร็ว ขี้เล่น' },
+              { a: 'OSTINATO', c: 'รูปแบบทำนองหรือจังหวะที่เล่นซ้ำไปเรื่อย ๆ' },
+              { a: 'GLISSANDO', c: 'รูดเสียงจากโน้ตหนึ่งไปอีกโน้ตหนึ่ง' },
+              { a: 'CODA', c: 'ส่วนจบของบทเพลง' },
+              { a: 'TUTTI', c: 'ทุกคนเล่นพร้อมกัน' },
+              { a: 'SOLO', c: 'เล่นหรือร้องคนเดียว' },
+              { a: 'ARIA', c: 'เพลงร้องเดี่ยวในโอเปรา' },
+              { a: 'OPERA', c: 'ละครร้องที่มีวงออร์เคสตราบรรเลง' },
+              { a: 'SOPRANO', c: 'เสียงร้องหญิงระดับสูงสุด' },
+              { a: 'TENOR', c: 'เสียงร้องชายระดับสูง' }
+            ]
+          },
+          {
+            id: "instruments", title: "เครื่องดนตรี", level: "ง่าย", words: [
+            { a: "VIOLIN", c: "เครื่องสายเสียงสูงที่สุดในวงออร์เคสตรา" },
+            { a: "VIOLA", c: "เครื่องสายที่ใหญ่กว่าไวโอลินเล็กน้อย เสียงทุ้มกว่า" },
+            { a: "CELLO", c: "เครื่องสายเสียงทุ้ม นั่งเล่นโดยวางไว้ระหว่างเข่า" },
+            { a: "HARP", c: "เครื่องสายขนาดใหญ่ ใช้นิ้วดีด" },
+            { a: "FLUTE", c: "เครื่องลมไม้ที่เป่าข้าง ไม่มีลิ้น" },
+            { a: "PICCOLO", c: "ฟลูตขนาดเล็ก เสียงสูงมาก" },
+            { a: "OBOE", c: "เครื่องลมไม้ลิ้นคู่ ใช้ให้เสียงเทียบของวงออร์เคสตรา" },
+            { a: "CLARINET", c: "เครื่องลมไม้ลิ้นเดี่ยว" },
+            { a: "BASSOON", c: "เครื่องลมไม้ลิ้นคู่เสียงต่ำ" },
+            { a: "TRUMPET", c: "เครื่องทองเหลืองเสียงสูง มีสามลูกสูบ" },
+            { a: "HORN", c: "เครื่องทองเหลืองที่ท่อขดเป็นวงกลม" },
+            { a: "TROMBONE", c: "เครื่องทองเหลืองที่ใช้คันชักเลื่อนเปลี่ยนเสียง" },
+            { a: "TUBA", c: "เครื่องทองเหลืองเสียงต่ำที่สุด" },
+            { a: "TIMPANI", c: "กลองที่ตั้งระดับเสียงได้" }
+            ]
+          },
+          {
+            id: "theory", title: "ทฤษฎีเบื้องต้น", level: "กลาง", words: [
+            { a: "SCALE", c: "บันไดเสียง" },
+            { a: "CHORD", c: "เสียงตั้งแต่สามเสียงขึ้นไปที่ดังพร้อมกัน" },
+            { a: "TRIAD", c: "คอร์ดที่มีสามเสียง" },
+            { a: "OCTAVE", c: "ระยะห่างแปดขั้นเสียง" },
+            { a: "MAJOR", c: "บันไดเสียงที่ให้ความรู้สึกสดใส" },
+            { a: "MINOR", c: "บันไดเสียงที่ให้ความรู้สึกหม่น" },
+            { a: "SHARP", c: "เครื่องหมายที่ทำให้เสียงสูงขึ้นครึ่งเสียง" },
+            { a: "FLAT", c: "เครื่องหมายที่ทำให้เสียงต่ำลงครึ่งเสียง" },
+            { a: "TONIC", c: "โน้ตตัวแรกและศูนย์กลางของบันไดเสียง" },
+            { a: "RHYTHM", c: "รูปแบบความสั้นยาวของเสียง" },
+            { a: "MELODY", c: "ทำนอง" },
+            { a: "HARMONY", c: "เสียงประสาน" },
+            { a: "TEMPO", c: "ความเร็วของเพลง" },
+            { a: "METER", c: "การจัดกลุ่มจังหวะ เช่น 3/4 หรือ 4/4" },
+            { a: "CLEF", c: "กุญแจประจำหลัก" },
+            { a: "INTERVAL", c: "ระยะห่างระหว่างเสียงสองเสียง" }
+            ]
+          },
+          {
+            id: "composers", title: "นักประพันธ์เพลง", level: "ยาก", words: [
+            { a: "BACH", c: "นักประพันธ์ยุคบาโรก ผู้แต่ง Brandenburg Concertos" },
+            { a: "HANDEL", c: "ผู้แต่ง Messiah" },
+            { a: "VIVALDI", c: "ผู้แต่ง The Four Seasons" },
+            { a: "HAYDN", c: "ได้ชื่อว่าบิดาแห่งซิมโฟนี" },
+            { a: "MOZART", c: "ผู้แต่งโอเปรา The Magic Flute" },
+            { a: "BEETHOVEN", c: "ผู้แต่งซิมโฟนีหมายเลข 9 ในช่วงที่สูญเสียการได้ยิน" },
+            { a: "SCHUBERT", c: "ผู้แต่งเพลงร้องศิลป์ (Lied) มากกว่า 600 เพลง" },
+            { a: "CHOPIN", c: "นักเปียโนชาวโปแลนด์ ผู้แต่ง Nocturnes" },
+            { a: "LISZT", c: "นักเปียโนชาวฮังการี ผู้แต่ง Hungarian Rhapsodies" },
+            { a: "BRAHMS", c: "ผู้แต่ง Hungarian Dances" },
+            { a: "VERDI", c: "ผู้แต่งโอเปรา La Traviata" },
+            { a: "WAGNER", c: "ผู้แต่งโอเปราชุด The Ring" },
+            { a: "DEBUSSY", c: "ผู้แต่ง Clair de lune" },
+            { a: "RAVEL", c: "ผู้แต่ง Boléro" }
+            ]
+          }
+        ];
+        // คำอ่านและเสียงของคำศัพท์ที่มีข้อมูลเสริม
+        var TERM_DETAILS = {
+          LARGO: { read: "ลาร์โก", demo: { type: "tempo", bpm: 50 } },
+          ADAGIO: { read: "อะดาโจ", demo: { type: "tempo", bpm: 66 } },
+          ANDANTE: { read: "อันดานเต", demo: { type: "tempo", bpm: 84 } },
+          MODERATO: { read: "โมเดราโต", demo: { type: "tempo", bpm: 108 } },
+          ALLEGRO: { read: "อัลเลโกร", demo: { type: "tempo", bpm: 132 } },
+          VIVACE: { read: "วีวาเช", demo: { type: "tempo", bpm: 160 } },
+          PRESTO: { read: "เพรสโต", demo: { type: "tempo", bpm: 184 } },
+          LENTO: { read: "เลนโต", demo: { type: "tempo", bpm: 56 } },
+          PIANO: { read: "เปียโน", demo: { type: "dynamic", level: "p" } },
+          FORTE: { read: "ฟอร์เต", demo: { type: "dynamic", level: "f" } },
+          MEZZO: { read: "เมดโซ", demo: { type: "dynamic", level: "mf" } },
+          CRESCENDO: { read: "เครเชนโด", demo: { type: "swell", dir: "up" } },
+          LEGATO: { read: "เลกาโต", demo: { type: "artic", style: "legato" } },
+          STACCATO: { read: "สตักกาโต", demo: { type: "artic", style: "staccato" } },
+          TENUTO: { read: "เตนูโต", demo: { type: "artic", style: "tenuto" } },
+          MARCATO: { read: "มาร์กาโต", demo: { type: "artic", style: "marcato" } },
+          FERMATA: { read: "แฟร์มาตา", demo: { type: "hold" } },
+          RUBATO: { read: "รูบาโต" },
+          DOLCE: { read: "โดลเช", demo: { type: "dynamic", level: "p" } },
+          CANTABILE: { read: "คันตาบิเล", demo: { type: "artic", style: "legato" } },
+          VIBRATO: { read: "วิบราโต", demo: { type: "vibrato" } },
+          TREMOLO: { read: "เทรโมโล", demo: { type: "tremolo" } },
+          PIZZICATO: { read: "พิซซิกาโต", demo: { type: "pluck" } },
+          ARPEGGIO: { read: "อาร์เปจโจ", demo: { type: "arpeggio" } },
+          SONATA: { read: "โซนาตา" },
+          CADENZA: { read: "คาเดนซา" },
+          SCHERZO: { read: "สแกร์ตโซ", demo: { type: "tempo", bpm: 168 } },
+          OSTINATO: { read: "ออสตินาโต" },
+          GLISSANDO: { read: "กลิสซันโด", demo: { type: "glide" } },
+          CODA: { read: "โคดา" },
+          TUTTI: { read: "ตุตตี", demo: { type: "together" } },
+          SOLO: { read: "โซโล", demo: { type: "alone" } },
+          ARIA: { read: "อาเรีย" },
+          OPERA: { read: "โอเปรา" },
+          SOPRANO: { read: "โซปราโน" },
+          TENOR: { read: "เทเนอร์" },
+          SCALE: { demo: { type: "tempo", bpm: 120 } },
+          CHORD: { demo: { type: "together" } },
+          TRIAD: { demo: { type: "together" } },
+          OCTAVE: { demo: { type: "glide" } },
+          TONIC: { demo: { type: "alone" } },
+          HARMONY: { demo: { type: "together" } }
+        };
+        // โหมดการเล่นและคำอธิบายสั้น ๆ
+        var MODES = [
+          {id: "classic", label: "ปกติ", about: "เติมแล้วกดตรวจเมื่อพร้อม"},
+          {id: "instant", label: "ตรวจทันที", about: "รู้ผลทันทีที่เติมตัวอักษร เหมาะกับการเรียนคำใหม่"},
+          {id: "timed", label: "จับเวลา", about: "ไขให้ครบก่อนหมดเวลา"}
+        ];
+        // เหรียญกับเงื่อนไขที่จะได้รับ
+        var BADGES = [
+          {id: "firstSolve", name: "ไขครั้งแรก", hint: "ไขปริศนาครบหนึ่งตาราง", test: "first", goal: 1},
+          {id: "noHints", name: "ไม่ง้อตัวช่วย", hint: "ไขครบโดยไม่ใช้ตัวช่วย", test: "clean", goal: 0},
+          {id: "oneCheck", name: "มั่นใจ", hint: "ไขครบด้วยการตรวจครั้งเดียว", test: "check", goal: 1},
+          {id: "onTime", name: "ทันเวลา", hint: "ไขครบในโหมดจับเวลา", test: "time", goal: 1},
+          {id: "collect20", name: "นักสะสมศัพท์", hint: "สะสมครบ 20 คำ", test: "collected", goal: 20},
+          {id: "collectAll", name: "พจนานุกรมเดินได้", hint: "สะสมครบทุกคำ", test: "terms", goal: 1},
+          {id: "allSets", name: "รอบรู้", hint: "ไขครบทุกชุด", test: "sets", goal: 1}
+        ];
+        // ชนิดเสียงตัวอย่างและความถี่ของโน้ตห้าตัว
+        var DEMO_TYPES = ['tempo','dynamic','swell','artic','hold','arpeggio','glide','tremolo',
+          'vibrato','pluck','together','alone'];
+        var DEMO_PITCHES = [261.63,293.66,329.63,349.23,392];
+        // ข้อความแนะนำสี่ขั้นก่อนเล่น
+        var HOWTO = [
+          "แตะช่องหรือคำใบ้ แล้วพิมพ์คำตอบเป็นตัวอักษรอังกฤษ",
+          "กดตรวจคำตอบเมื่อพร้อม ช่องที่ผิดจะมีกากบาท",
+          "ไขคำได้เมื่อไร จะได้การ์ดศัพท์ กดฟังตัวอย่างเสียงได้",
+          "คำที่ไขได้จะถูกเก็บในสมุดศัพท์ สะสมให้ครบทุกคำ"
+        ];
+        /* ═══════════ โซน B · ตั้งค่า (แก้ได้) ═══════════ */
+        var CONFIG = {
+          wordsPerPuzzle: 10, /* จำนวนคำที่สุ่มต่อรอบ */
+          quickSeeds: 9, /* จำนวนผังที่ลองต่อชุดย่อย */
+          subsetTries: 16, /* จำนวนชุดย่อยที่ลอง */
+          hintsPerPuzzle: 3, /* จำนวนใบ้อักษรต่อรอบ */
+          revealsPerPuzzle: 1, /* จำนวนเผยคำต่อรอบ */
+          hintCost: 30, /* คะแนนที่หักต่อคำใบ้ */
+          checkCost: 10, /* คะแนนที่หักเมื่อตรวจซ้ำ */
+          wordPoints: 100, /* คะแนนต่อคำในโหมดปกติ */
+          timedSec: 480, /* เวลาเริ่มโหมดจับเวลาเป็นวินาที */
+          hintTimeSec: 20, /* เวลาที่หักเมื่อขอใบ้เป็นวินาที */
+          timePoint: 2, /* คะแนนเพิ่มต่อวินาทีที่เหลือ */
+          demoBpm: 96, /* จำนวนจังหวะต่อนาทีของตัวอย่างพื้นฐาน */
+          toastMs: 2500, /* เวลาข้อความชั่วคราวเป็นมิลลิวินาที */
+          maxCols: 11 /* จำนวนคอลัมน์สูงสุด */,
+          maxRows: 13 /* จำนวนแถวสูงสุด */,
+          minWordsPlaced: 8 /* จำนวนคำน้อยสุดที่แนะนำ */,
+          layoutSeeds: 200 /* จำนวนเมล็ดที่ลอง */,
+          minCellPx: 26 /* ขนาดช่องเล็กสุดเป็นพิกเซล */,
+          maxCellPx: 44 /* ขนาดช่องใหญ่สุดเป็นพิกเซล */,
+          confirmMs: 4000 /* เวลายืนยันการล้างเป็นมิลลิวินาที */,
+          finishStartMs: 30 /* เวลาก่อนเริ่มแสดงผลสำเร็จเป็นมิลลิวินาที */,
+          finishStepMs: 10 /* ระยะห่างเริ่มสีแต่ละช่องเป็นมิลลิวินาที */,
+          finishMaxDelayMs: 480 /* ความล่าช้าสูงสุดของสีแต่ละช่องเป็นมิลลิวินาที */,
+          finishTransitionMs: 120 /* เวลาเปลี่ยนสีเมื่อสำเร็จเป็นมิลลิวินาที */
+        };
+        /* ═══════════ โซน C · แกนเกม (ห้ามแก้) ═══════════ */
+        var Core = {};
+
+        // สร้างตัวสุ่มที่ให้ผลซ้ำได้
+        Core.makeRng = function (seed) {
+          return function () {
+            var t = (seed += 0x6d2b79f5);
+            t = Math.imul(t ^ (t >>> 15), t | 1);
+            t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+            return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+          };
+        };
+
+        // กรองและปรับศัพท์ก่อนสร้างตาราง
+        Core.normalizeWords = function (words) {
+          var seen = {},
+            clean = [],
+            rejected = [];
+          (words || []).forEach(function (w) {
+            var original = String(w.a || ''),
+              a = original.toUpperCase().replace(/[^A-Z]/g, ''),
+              c = String(w.c || '').trim(),
+              reason = '';
+            if (a.length < 3 || a.length > 10) reason = 'ความยาวต้องอยู่ระหว่าง 3 ถึง 10 ตัว';
+            else if (!c) reason = 'ไม่มีคำใบ้';
+            else if (seen[a]) reason = 'คำตอบซ้ำ';
+            if (reason) rejected.push({ a: original, reason: reason });
+            else {
+              seen[a] = true;
+              clean.push({ a: a, c: c });
+            }
+          });
+          return { words: clean, rejected: rejected };
+        };
+
+        // วางคำไขว้ตามพื้นที่ที่กำหนด
+        Core.buildLayout = function (words, seed, config) {
+          var rng = Core.makeRng(seed),
+            order = words
+              .map(function (w) {
+                return { a: w.a, c: w.c, tie: rng() };
+              })
+              .sort(function (a, b) {
+                return b.a.length - a.a.length || a.tie - b.tie;
+              }),
+            grid = new Map(),
+            entries = [],
+            minR = 0,
+            maxR = 0,
+            minC = 0,
+            maxC = 0;
+
+          // สร้างรหัสช่อง
+          function key(r, c) {
+            return r + ',' + c;
+          }
+
+          // อ่านข้อมูลช่อง
+          function get(r, c) {
+            return grid.get(key(r, c));
+          }
+
+          // วางคำลงบนตาราง
+          function place(w, r, c, dir) {
+            var dr = dir === 'down' ? 1 : 0,
+              dc = dir === 'across' ? 1 : 0;
+            for (var i = 0; i < w.a.length; i++) {
+              var rr = r + dr * i,
+                cc = c + dc * i,
+                k = key(rr, cc),
+                cell = grid.get(k);
+              if (!cell) {
+                cell = { letter: w.a[i], dirs: {} };
+                grid.set(k, cell);
+              }
+              cell.dirs[dir] = true;
+              minR = Math.min(minR, rr);
+              maxR = Math.max(maxR, rr);
+              minC = Math.min(minC, cc);
+              maxC = Math.max(maxC, cc);
+            }
+            entries.push({ a: w.a, c: w.c, row: r, col: c, dir: dir });
+          }
+
+          // ลองวางคำในจุดตัด
+          function tryWord(w) {
+            var candidates = [],
+              seen = new Set(),
+              oldArea = (maxR - minR + 1) * (maxC - minC + 1);
+            grid.forEach(function (cell, k) {
+              for (var i = 0; i < w.a.length; i++) {
+                if (cell.letter !== w.a[i]) continue;
+                ['across', 'down'].forEach(function (dir) {
+                  var parts = k.split(','),
+                    cr = Number(parts[0]),
+                    cc = Number(parts[1]),
+                    dr = dir === 'down' ? 1 : 0,
+                    dc = dir === 'across' ? 1 : 0,
+                    r = cr - dr * i,
+                    c = cc - dc * i,
+                    id = key(r, c) + dir;
+                  if (seen.has(id)) return;
+                  seen.add(id);
+                  if (get(r - dr, c - dc) || get(r + dr * w.a.length, c + dc * w.a.length))
+                    return;
+                  var bottom = r + dr * (w.a.length - 1),
+                    right = c + dc * (w.a.length - 1),
+                    r0 = Math.min(minR, r, bottom),
+                    r1 = Math.max(maxR, r, bottom),
+                    c0 = Math.min(minC, c, right),
+                    c1 = Math.max(maxC, c, right);
+                  if (c1 - c0 + 1 > config.maxCols || r1 - r0 + 1 > config.maxRows) return;
+                  var crosses = 0;
+                  for (var j = 0; j < w.a.length; j++) {
+                    var rr = r + dr * j,
+                      cc2 = c + dc * j,
+                      there = get(rr, cc2);
+                    if (there) {
+                      if (there.letter !== w.a[j] || there.dirs[dir]) return;
+                      crosses++;
+                    } else if (get(rr + dc, cc2 + dr) || get(rr - dc, cc2 - dr)) return;
+                  }
+                  if (!crosses) return;
+                  var score = crosses * 10 - ((r1 - r0 + 1) * (c1 - c0 + 1) - oldArea);
+                  candidates.push({ r: r, c: c, dir: dir, score: score, tie: rng() });
+                });
+              }
+            });
+            if (!candidates.length) return false;
+            candidates.sort(function (a, b) {
+              return b.score - a.score || a.tie - b.tie;
+            });
+            var best = candidates[0];
+            place(w, best.r, best.c, best.dir);
+            return true;
+          }
+          if (!order.length) return { entries: [], cols: 0, rows: 0, unplaced: [] };
+          place(order[0], 0, 0, 'across');
+          var unplaced = [];
+          order.slice(1).forEach(function (w) {
+            if (!tryWord(w)) unplaced.push(w);
+          });
+          var retry = [];
+          unplaced.forEach(function (w) {
+            if (!tryWord(w)) retry.push({ a: w.a, c: w.c });
+          });
+          return {
+            entries: entries.map(function (e) {
+              return { a: e.a, c: e.c, row: e.row - minR, col: e.col - minC, dir: e.dir };
+            }),
+            cols: maxC - minC + 1,
+            rows: maxR - minR + 1,
+            unplaced: retry
+          };
+        };
+
+        // หาแบบตารางที่วางคำได้มากที่สุด
+        Core.bestLayout = function (words, config) {
+          var best = null,
+            bestSeed = 0;
+          for (var seed = 1; seed <= config.layoutSeeds; seed++) {
+            var l = Core.buildLayout(words, seed, config),
+              area = l.cols * l.rows;
+            if (
+              !best ||
+              l.entries.length > best.entries.length ||
+              (l.entries.length === best.entries.length && area < best.cols * best.rows)
+            ) {
+              best = l;
+              bestSeed = seed;
+            }
+          }
+          if (best) best.seed = bestSeed;
+          return best || { entries: [], cols: 0, rows: 0, unplaced: [] };
+        };
+
+        // ตรวจสอบจุดตัดของตาราง
+        Core.validateLayout = function (layout) {
+          var problems = [],
+            grid = {},
+            starts = {},
+            entries = layout.entries || [];
+
+          // สร้างรหัสช่อง
+          function key(r, c) {
+            return r + ',' + c;
+          }
+          entries.forEach(function (e, i) {
+            for (var j = 0; j < e.a.length; j++) {
+              var r = e.row + (e.dir === 'down' ? j : 0),
+                c = e.col + (e.dir === 'across' ? j : 0),
+                k = key(r, c);
+              if (r < 0 || c < 0 || r >= layout.rows || c >= layout.cols)
+                problems.push('คำอยู่นอกตาราง');
+              if (grid[k] && grid[k].letter !== e.a[j])
+                problems.push('ตัวอักษรไขว้ไม่ตรงกัน');
+              if (!grid[k]) grid[k] = { letter: e.a[j], ids: [], dirs: {} };
+              if (grid[k].dirs[e.dir]) problems.push('คำทิศเดียวกันทับกัน');
+              grid[k].dirs[e.dir] = true;
+              grid[k].ids.push(i);
+            }
+            starts[key(e.row, e.col) + e.dir + e.a.length] = true;
+          });
+          if (layout.cols > CONFIG.maxCols || layout.rows > CONFIG.maxRows)
+            problems.push('ตารางใหญ่เกินกำหนด');
+          ['across', 'down'].forEach(function (dir) {
+            for (var r = 0; r < layout.rows; r++)
+              for (var c = 0; c < layout.cols; c++) {
+                var dr = dir === 'down' ? 1 : 0,
+                  dc = dir === 'across' ? 1 : 0;
+                if (!grid[key(r, c)] || grid[key(r - dr, c - dc)]) continue;
+                var n = 0;
+                while (grid[key(r + dr * n, c + dc * n)]) n++;
+                if (n >= 2 && !starts[key(r, c) + dir + n])
+                  problems.push('มีแถวตัวอักษรที่ไม่ใช่คำ');
+              }
+          });
+          if (entries.length) {
+            var reached = new Set([0]),
+              changed = true;
+            while (changed) {
+              changed = false;
+              Object.keys(grid).forEach(function (k) {
+                var ids = grid[k].ids;
+                if (
+                  ids.some(function (i) {
+                    return reached.has(i);
+                  })
+                )
+                  ids.forEach(function (i) {
+                    if (!reached.has(i)) {
+                      reached.add(i);
+                      changed = true;
+                    }
+                  });
+              });
+            }
+            if (reached.size !== entries.length) problems.push('คำไม่ได้เชื่อมกันทั้งหมด');
+          }
+          return { ok: problems.length === 0, problems: problems };
+        };
+
+        // กำหนดหมายเลขคำใบ้
+        Core.numberEntries = function (layout) {
+          var positions = {},
+            n = 0,
+            entries = layout.entries.map(function (e) {
+              return Object.assign({}, e);
+            });
+          entries
+            .slice()
+            .sort(function (a, b) {
+              return a.row - b.row || a.col - b.col;
+            })
+            .forEach(function (e) {
+              var k = e.row + ',' + e.col;
+              if (!positions[k]) positions[k] = ++n;
+            });
+          entries.forEach(function (e) {
+            e.num = positions[e.row + ',' + e.col];
+          });
+          return {
+            entries: entries,
+            across: entries
+              .filter(function (e) {
+                return e.dir === 'across';
+              })
+              .sort(function (a, b) {
+                return a.num - b.num;
+              }),
+            down: entries
+              .filter(function (e) {
+                return e.dir === 'down';
+              })
+              .sort(function (a, b) {
+                return a.num - b.num;
+              })
+          };
+        };
+
+        // ตรวจตัวอักษรแต่ละช่องและคำที่ไขครบ
+        Core.checkGrid = function (layout, letters) {
+          var cells = {},
+            entries = layout.entries.map(function (e) {
+              var solved = true;
+              for (var i = 0; i < e.a.length; i++) {
+                var r = e.row + (e.dir === 'down' ? i : 0),
+                  c = e.col + (e.dir === 'across' ? i : 0),
+                  k = r + ',' + c,
+                  value = letters[k] || '',
+                  status = !value ? 'empty' : value === e.a[i] ? 'right' : 'wrong';
+                cells[k] = status;
+                if (status !== 'right') solved = false;
+              }
+              return Object.assign({}, e, { solved: solved });
+            });
+          return {
+            cells: cells,
+            entries: entries,
+            complete:
+              entries.length > 0 &&
+              entries.every(function (e) {
+                return e.solved;
+              })
+          };
+        };
+        // เลือกคำโดยไม่ซ้ำจากรายการที่สับด้วยตัวสุ่ม
+        Core.drawWords = function (words, count, rng) {
+          var deck = words.slice();
+          for (var i = deck.length - 1; i > 0; i--) {
+            var j = Math.floor(rng() * (i + 1));
+            var word = deck[i];
+            deck[i] = deck[j];
+            deck[j] = word;
+          }
+          return deck.slice(0, count);
+        };
+
+        // สร้างตารางเดิมสำหรับเมล็ดศูนย์ และสุ่มชุดคำอื่นตามเมล็ดที่กำหนด
+        Core.makePuzzle = function (set, seed, config) {
+          var cleaned = Core.normalizeWords(set.words);
+          if (!seed) return Core.bestLayout(cleaned.words, config);
+          var rng = Core.makeRng(seed);
+          var best = null;
+          var quick = Object.assign({}, config, { layoutSeeds:config.quickSeeds });
+          for (var retry = 0; retry < config.subsetTries; retry++) {
+            var words = Core.drawWords(cleaned.words, config.wordsPerPuzzle, rng);
+            var grid = Core.bestLayout(words, quick);
+            if (!best || grid.entries.length > best.entries.length) best = grid;
+            if (best.entries.length >= Math.min(config.minWordsPlaced, cleaned.words.length)) break;
+          }
+          return best;
+        };
+
+        // คืนคำในเอกสารคำศัพท์รวมคำอ่านและเสียงที่กำหนด
+        Core.term = function (answer) {
+          for (var set of WORD_SETS) {
+            var word = set.words.find(function (row) { return row.a === answer; });
+            if (word) return Object.assign({}, word, TERM_DETAILS[answer] || {});
+          }
+          return null;
+        };
+
+        // สร้างกำหนดการเล่นเสียงศัพท์ โดยแต่ละรายการมีเวลาและความดัง
+        Core.demoSchedule = function (demo) {
+          if (!demo || DEMO_TYPES.indexOf(demo.type) < 0) return [];
+          var beatSec = 60 / (demo.type === 'tempo' ? demo.bpm : CONFIG.demoBpm);
+          var kind = demo.type;
+          var pitches = DEMO_PITCHES.slice();
+          var length = 0.85;
+          var gain = 0.6;
+          if (!Number.isFinite(beatSec) || beatSec <= 0) return [];
+          if (kind === 'dynamic') {
+            gain = {p:0.2,mf:0.6,f:1}[demo.level];
+            if (gain === undefined) return [];
+          }
+          if (kind === 'swell' && ['up','down'].indexOf(demo.dir) < 0) return [];
+          if (kind === 'artic') {
+            length = {legato:1,staccato:0.25,tenuto:0.95,marcato:0.6}[demo.style];
+            if (length === undefined) return [];
+            if (demo.style === 'marcato') gain = 1;
+          }
+          if (kind === 'hold') pitches = pitches.slice(0,3);
+          if (kind === 'arpeggio' || kind === 'together') pitches = [261.63,329.63,392,523.25];
+          if (kind === 'together') pitches = pitches.slice(0,3);
+          if (kind === 'alone') pitches = [392];
+          if (kind === 'glide') return [{hz:261.63,atSec:0,durSec:1.2,gain:gain,endHz:523.25}];
+          if (kind === 'vibrato') return [{hz:440,atSec:0,durSec:2,gain:gain,vibrato:true}];
+          if (kind === 'tremolo') {
+            pitches = Array(12).fill(392);
+            beatSec = 0.09;
+          }
+          return pitches.map(function (hz,index) {
+            var item = {hz:hz,atSec:index * beatSec,durSec:length * beatSec,gain:gain};
+            if (kind === 'hold' && index === 2) item.durSec = beatSec * 3;
+            if (kind === 'swell') {
+              var increase = (demo.dir === 'up' ? index : pitches.length - index - 1) / (pitches.length - 1);
+              item.gain = 0.15 + 0.85 * increase;
+            }
+            if (kind === 'together') { item.atSec = 0; item.durSec = 1.5; }
+            if (kind === 'pluck') { item.durSec = 0.08; item.pluck = true; }
+            if (kind === 'alone') item.durSec = 1.2;
+            return item;
+          });
+        };
+
+        // ใส่อักษรที่ถูกต้องหนึ่งช่องและล็อกไว้โดยไม่เปลี่ยนสถานะต้นฉบับ
+        Core.applyHint = function (state, key, answer) {
+          if (!key || !answer || state.hints >= CONFIG.hintsPerPuzzle || state.fixed[key]) return state;
+          return Object.assign({}, state, {
+            letters: Object.assign({}, state.letters, {[key]:answer}),
+            fixed: Object.assign({}, state.fixed, {[key]:true}),
+            hints:state.hints + 1
+          });
+        };
+
+        // ใส่คำตอบทั้งคำและแยกคำนี้ออกจากคะแนนและชุดสะสม
+        Core.applyReveal = function (state, entry) {
+          if (!entry || state.reveals >= CONFIG.revealsPerPuzzle || state.revealed[entry.a]) return state;
+          var letters = Object.assign({}, state.letters);
+          for (var i = 0; i < entry.a.length; i++) {
+            var row = entry.row + (entry.dir === 'down' ? i : 0);
+            var col = entry.col + (entry.dir === 'across' ? i : 0);
+            letters[row + ',' + col] = entry.a[i];
+          }
+          return Object.assign({},state,{
+            letters:letters,
+            revealed:Object.assign({},state.revealed,{[entry.a]:true}),
+            reveals:state.reveals + 1
+          });
+        };
+
+        // คำนวณคะแนนตามโหมดและจำนวนตัวช่วยที่ใช้
+        Core.puzzleScore = function (round) {
+          var pts = round.mode === 'instant' ? CONFIG.wordPoints / 2 : CONFIG.wordPoints;
+          var score = round.earned * pts;
+          if (round.mode === 'classic') score -= Math.max(0,round.checks - 1) * CONFIG.checkCost;
+          if (round.mode === 'timed') score += Math.floor(round.secondsLeft || 0) * CONFIG.timePoint;
+          else score -= round.hints * CONFIG.hintCost;
+          return Math.max(0,score);
+        };
+
+        // คำนวณจำนวนดาวเทียบกับคะแนนเต็มของจำนวนคำ
+        Core.puzzleStars = function (score, count) {
+          var capacity = Math.max(1,count) * CONFIG.wordPoints;
+          if (score >= capacity * 0.9) return 3;
+          if (score >= capacity * 0.6) return 2;
+          return 1;
+        };
+
+        // ตรวจเงื่อนไขเหรียญและจำนวนคำในสมุดศัพท์
+        Core.badgeRules = {
+          first: function (r,n) { return r.solvedSets.length >= n; },
+          clean: function (r,n) { return r.solved && r.hints + r.reveals === n; },
+          check: function (r,n) { return r.solved && r.mode === 'classic' && r.checks === n; },
+          time: function (r) { return r.solved && r.mode === 'timed'; },
+          collected: function (r,n) { return r.collected >= n; },
+          terms: function (r) { return r.collected === r.total; },
+          sets: function (r) { return r.solvedSets.length === WORD_SETS.length; }
+        };
+
+        // ตรวจโหมด ระบบช่วย และกำหนดการเสียง
+        function checkV2(check) {
+          check('หยิบคำด้วยเมล็ดเดิมได้คำเดิม', function () {
+            var words = WORD_SETS[0].words;
+            var a = Core.drawWords(words,10,Core.makeRng(2));
+            var b = Core.drawWords(words,10,Core.makeRng(2));
+            return a.length === 10 && new Set(a).size === 10 && a.every(function (w,i) { return w === b[i]; });
+          });
+          check('เสียงตัวอย่างตรงจังหวะและความดัง', function () {
+            var slow = Core.demoSchedule({type:'tempo',bpm:60});
+            var short = Core.demoSchedule({type:'artic',style:'staccato'});
+            var swell = Core.demoSchedule({type:'swell',dir:'up'});
+            return slow.map(function (n) { return n.atSec; }).join() === '0,1,2,3,4'
+              && short[0].durSec === 0.25 * (60 / CONFIG.demoBpm)
+              && swell[0].gain < swell[4].gain && !Core.demoSchedule({type:'invalid'}).length;
+          });
+          check('ใบ้อักษรได้สามครั้งและเผยคำได้ครั้งเดียว', function () {
+            var state = {letters:{},fixed:{},hints:0,reveals:0,revealed:{}};
+            for(var i = 0; i < CONFIG.hintsPerPuzzle; i++) state = Core.applyHint(state,'0,' + i,'A');
+            var end = Core.applyReveal(state,{a:'LARGO',row:2,col:0,dir:'across'});
+            return Core.applyHint(state,'1,0','B') === state && Object.keys(state.fixed).length === 3
+              && end.reveals === 1 && end.revealed.LARGO && end.letters['2,4'] === 'O';
+          });
+          check('คะแนนและดาวของสามโหมด', function () {
+            var state = {mode:'classic',earned:8,checks:2,hints:1,secondsLeft:10};
+            var v = Core.puzzleScore(state);
+            var instant = Core.puzzleScore(Object.assign({},state,{mode:'instant',hints:0}));
+            var timed = Core.puzzleScore(Object.assign({},state,{mode:'timed'}));
+            return v === 760 && Core.puzzleStars(v,8) === 3 && instant === 400 && timed === 820;
+          });
+          check('ข้อมูลเสียงตัวอย่างของทุกชุด', function () {
+            return WORD_SETS.every(function (set) {
+              return set.words.every(function (w) {
+                var term = Core.term(w.a);
+                return !term.demo || Core.demoSchedule(term.demo).length > 0;
+              });
+            });
+          });
+          MODES.forEach(function (mode) {
+            check('เล่นปริศนาจนจบโหมด ' + mode.label, function () {
+              var grid = Core.makePuzzle(WORD_SETS[0],5,CONFIG);
+              var letters = {};
+              grid.entries.forEach(function (entry) {
+                letters = Core.applyReveal({letters:letters,reveals:0,revealed:{}},entry).letters;
+              });
+              return Core.checkGrid(grid,letters).complete;
+            });
+          });
+        }
+
+        // ตรวจแกนเกมกับข้อมูลตัวอย่าง
+        function runSelfCheck() {
+          var results = [],
+            cache = [];
+
+          // บันทึกผลการตรวจหนึ่งข้อ
+          function check(name, fn) {
+            try {
+              var ok = !!fn();
+              results.push({ name: name, ok: ok, detail: '' });
+            } catch (e) {
+              results.push({ name: name, ok: false, detail: String(e) });
+            }
+          }
+          WORD_SETS.forEach(function (set, i) {
+            var words = Core.normalizeWords(set.words).words,
+              l = Core.bestLayout(words, CONFIG);
+            cache.push(l);
+            check('ตารางถูกต้อง: ' + set.title, function () {
+              return Core.validateLayout(l).ok;
+            });
+            if (i < 3)
+              check('วางอย่างน้อยเก้าคำ: ' + set.title, function () {
+                return (
+                  l.entries.length >= 9 &&
+                  l.cols <= CONFIG.maxCols &&
+                  l.rows <= CONFIG.maxRows
+                );
+              });
+            else
+              check('คำที่ไม่มีอักษรร่วม: ' + set.title, function () {
+                var x = Core.buildLayout(
+                  [
+                    { a: 'ABC', c: 'ก' },
+                    { a: 'XYZ', c: 'ข' }
+                  ],
+                  1,
+                  CONFIG
+                );
+                return x.entries.length === 1 && x.unplaced.length === 1;
+              });
+          });
+          check('สร้างตารางซ้ำได้เหมือนเดิม', function () {
+            return (
+              JSON.stringify(cache[0]) ===
+              JSON.stringify(
+                Core.bestLayout(Core.normalizeWords(WORD_SETS[0].words).words, CONFIG)
+              )
+            );
+          });
+          check('ลำดับหมายเลขและคำใบ้', function () {
+            var x = Core.numberEntries({
+              entries: [
+                { a: 'CAT', c: 'ก', row: 0, col: 0, dir: 'across' },
+                { a: 'ARE', c: 'ข', row: 0, col: 1, dir: 'down' },
+                { a: 'TEN', c: 'ค', row: 0, col: 2, dir: 'down' }
+              ]
+            });
+            return x.across[0].num === 1 && x.down[0].num === 2 && x.down[1].num === 3;
+          });
+          check('ตรวจคำตอบและจุดไขว้', function () {
+            var l = {
+                entries: [
+                  { a: 'CAT', row: 0, col: 0, dir: 'across' },
+                  { a: 'ARE', row: 0, col: 1, dir: 'down' }
+                ]
+              },
+              letters = { '0,0': 'C', '0,1': 'A', '0,2': 'T', '1,1': 'R', '2,1': 'E' };
+            if (!Core.checkGrid(l, letters).complete) return false;
+            letters['0,1'] = 'Z';
+            var x = Core.checkGrid(l, letters);
+            return (
+              Object.keys(x.cells).filter(function (k) {
+                return x.cells[k] === 'wrong';
+              }).length === 1 &&
+              x.entries.every(function (e) {
+                return !e.solved;
+              })
+            );
+          });
+          check('ทำความสะอาดและปฏิเสธคำไม่ถูกต้อง', function () {
+            var x = Core.normalizeWords([
+              { a: 'a b-c', c: 'ก' },
+              { a: 'AB', c: 'ข' },
+              { a: 'ABC', c: 'ค' },
+              { a: 'TEST', c: '' }
+            ]);
+            return x.words.length === 1 && x.words[0].a === 'ABC' && x.rejected.length === 3;
+          });
+          check('คำไม่มีอักษรร่วม', function () {
+            var x = Core.buildLayout(
+              [
+                { a: 'ABC', c: 'ก' },
+                { a: 'XYZ', c: 'ข' }
+              ],
+              1,
+              CONFIG
+            );
+            return x.entries.length === 1 && x.unplaced.length === 1;
+          });
+          checkV2(check);
+          var passed = results.filter(function (r) {
+            return r.ok;
+          }).length;
+          return { passed: passed, failed: results.length - passed, results: results };
+        }
+        /* ═══════════ โซน D · หน้าจอและเสียง (ห้ามแก้ถ้าไม่จำเป็น) ═══════════ */
+        var handlers = {},
+          errors = [],
+          memory = {},
+          storageOK = true,
+          settings = read('term-crossword-settings-v1', {}),
+          progress = read('term-crossword-progress-v1', {}),
+          cache = {},
+          setId = settings.setId || WORD_SETS[0].id,
+          layout = null,
+          board = {},
+          letters = {},
+          marks = {},
+          solved = {},
+          checks = 0,
+          selected = null,
+          position = null,
+          complete = false,
+          confirmUntil = 0,
+          finishTimer = null,
+          finishEndTimer = null;
+        var STATS = 'term-crossword-stats-v2';
+        var SETTINGS = 'term-crossword-settings-v1';
+        var PROGRESS = 'term-crossword-progress-v1';
+        var stats = read(STATS,{best:{},badges:[],collected:[],solvedSets:[],seenHowto:false});
+        var screen = 'cover';
+        var mode = 'classic';
+        var seed = 0;
+        var hints = 0;
+        var reveals = 0;
+        var fixed = {};
+        var revealed = {};
+        var elapsedMs = 0;
+        var anchorMs = null;
+        var clock = null;
+        var lastSecond = null;
+        var score = 0;
+        var ended = false;
+        var termQueue = [];
+        var termParent = null;
+        var toastTimer = null;
+        var theme = settings.theme || 'auto';
+        var palette = settings.palette || 'trem';
+        var reduced = Boolean(settings.reduced);
+        var volume = Number.isFinite(settings.volume) ? settings.volume : 25;
+        var ctx = null;
+        var demoVoices = [];
+        var pendingAction = '';
+
+        // คืนองค์ประกอบตามรหัส
+        function byId(id) {
+          return document.getElementById(id);
+        }
+
+        // เล่นเสียงผ่านตัวสั่นและเกนที่สร้างตามต้องการ
+        function playTone(hz,durSec,whenSec,item) {
+          if (!ctx) return;
+          try {
+            var start = ctx.currentTime + (whenSec || 0);
+            var osc = ctx.createOscillator();
+            var voice = ctx.createGain();
+            var top = (item ? item.gain : 0.6) * volume / 100 * 0.2;
+            osc.frequency.setValueAtTime(hz,start);
+            if (item && item.endHz) osc.frequency.exponentialRampToValueAtTime(item.endHz,start + durSec);
+            if (item && item.vibrato) {
+              for (var i = 1; i < 50; i++) {
+                var at = durSec * i / 50;
+                osc.frequency.linearRampToValueAtTime(hz + 6 * Math.sin(at * 12 * Math.PI),start + at);
+              }
+            }
+            voice.gain.setValueAtTime(0,start);
+            voice.gain.linearRampToValueAtTime(top,start + 0.01);
+            voice.gain.linearRampToValueAtTime(0,start + durSec);
+            osc.connect(voice);
+            voice.connect(ctx.destination);
+            osc.start(start);
+            osc.stop(start + durSec + 0.01);
+            if (item) demoVoices.push(osc);
+          } catch (e) {
+            return;
+          }
+        }
+
+        // เตรียมเสียงเมื่อผู้เล่นกดปุ่ม
+        function enableAudio() {
+          if (ctx) return true;
+          var Audio = window.AudioContext || window.webkitAudioContext;
+          if (!Audio) return false;
+          try {
+            ctx = new Audio();
+            if (ctx.resume) ctx.resume().catch(function () {});
+            return true;
+          } catch (e) {
+            return false;
+          }
+        }
+
+        // หยุดเสียงตัวอย่างที่เริ่มไว้ก่อนหน้า
+        function stopDemo() {
+          demoVoices.forEach(function (voice) {
+            try { voice.stop(); } catch (e) {}
+          });
+          demoVoices = [];
+        }
+
+        // เล่นตัวอย่างของศัพท์ตามข้อมูล โดยยกเลิกเสียงเดิมก่อน
+        function playDemo(answer) {
+          var term = Core.term(answer);
+          if (!term || !term.demo) return false;
+          stopDemo();
+          if (!enableAudio()) {
+            showToast('เบราว์เซอร์นี้เล่นเสียงตัวอย่างไม่ได้');
+            return false;
+          }
+          Core.demoSchedule(term.demo).forEach(function (item) {
+            playTone(item.hz,item.durSec,item.atSec,item);
+          });
+          return true;
+        }
+
+        // เปิดจอที่เลือกและย้ายโฟกัสไปยังหัวเรื่อง
+        function showScreen(next) {
+          var from = screen;
+          stopDemo();
+          screen = next;
+          document.querySelectorAll('[data-screen]').forEach(function (node) {
+            node.hidden = node.dataset.screen !== next;
+          });
+          document.querySelector('[data-screen="' + next + '"] h1').focus();
+          if (from !== next) emit('screenChange',{from:from,to:next});
+        }
+
+        // แสดงข้อความชั่วคราวหนึ่งรายการ
+        function showToast(text) {
+          clearTimeout(toastTimer);
+          var node = byId('toast');
+          node.textContent = text;
+          node.hidden = false;
+          toastTimer = setTimeout(function () { node.hidden = true; },CONFIG.toastMs);
+        }
+
+        // นับจำนวนคำศัพท์ทั้งหมดในทุกชุด
+        function totalWords() {
+          return WORD_SETS.reduce(function (n,set) { return n + set.words.length; },0);
+        }
+
+        // สร้างการ์ดศัพท์จากคำอ่าน คำใบ้ และตัวอย่างที่มี
+        function termRow(term) {
+          var article = document.createElement('article');
+          article.className = 'term-row';
+          var title = document.createElement('strong');
+          title.textContent = term.a;
+          article.appendChild(title);
+          var lines = [];
+          if (term.read) lines.push('อ่านว่า ' + term.read);
+          lines.push(term.c);
+          if (term.more) lines.push(term.more);
+          lines.forEach(function (text) {
+            var line = document.createElement('p');
+            line.textContent = text;
+            article.appendChild(line);
+          });
+          if (term.demo) {
+            var listen = document.createElement('button');
+            listen.textContent = 'ฟังตัวอย่าง';
+            listen.onclick = function () { playDemo(term.a); };
+            article.appendChild(listen);
+          }
+          return article;
+        }
+
+        // แสดงคำที่ไขล่าสุดพร้อมปุ่มถัดไปหรือปิด
+        function renderTerm() {
+          var node = byId('termCard');
+          node.hidden = !termQueue.length;
+          node.textContent = '';
+          if (!termQueue.length) return;
+          var term = Core.term(termQueue[0].a) || termQueue[0];
+          var row = termRow(term);
+          var next = document.createElement('button');
+          next.textContent = termQueue.length > 1 ? 'ถัดไป' : 'ปิด';
+          next.onclick = function () {
+            termQueue.shift();
+            stopDemo();
+            renderTerm();
+            if (!termQueue.length && screen === 'play') focusCell();
+          };
+          node.append(row,next);
+          emit('termShown',{a:term.a,read:term.read || '',c:term.c,hasDemo:Boolean(term.demo)});
+        }
+
+        // ปิดและล้างคิวการ์ดเมื่อผู้เล่นเริ่มแก้คำอื่น
+        function dismissTerm() {
+          if (!termQueue.length) return;
+          termQueue = [];
+          stopDemo();
+          renderTerm();
+        }
+
+        // คืนข้อมูลที่ใช้คิดคะแนน ณ เวลาปัจจุบัน
+        function scoring(remaining) {
+          var earned = layout.entries.filter(function (entry) {
+            return solved[entryId(entry)] && !revealed[entry.a];
+          }).length;
+          return {mode:mode,earned:earned,hints:hints,checks:checks,secondsLeft:remaining};
+        }
+
+        // ปรับคะแนนบนจอและส่งเหตุการณ์เมื่อมีการเปลี่ยน
+        function updateScore(remaining) {
+          var newScore = Core.puzzleScore(scoring(remaining));
+          var delta = newScore - score;
+          score = newScore;
+          var node = byId('score');
+          node.textContent = score;
+          if (delta) {
+            node.classList.remove('score-pop');
+            node.getBoundingClientRect();
+            node.classList.add('score-pop');
+            emit('scoreChange',{score:score,delta:delta});
+          }
+        }
+
+        // วัดเวลาที่เล่นโดยไม่อิงนาฬิกาอุปกรณ์เสียง
+        function activeMs() {
+          return elapsedMs + (anchorMs === null ? 0 : performance.now() - anchorMs);
+        }
+
+        // คำนวณเวลาที่เหลือในโหมดจับเวลา
+        function remainingTime() {
+          return Math.max(0,CONFIG.timedSec - (activeMs()/1000) - hints * CONFIG.hintTimeSec);
+        }
+
+        // หยุดเวลาขณะออกจากหน้าเล่นหรือปิดแท็บ
+        function stopClock() {
+          elapsedMs = activeMs();
+          anchorMs = null;
+          clearInterval(clock);
+          clock = null;
+        }
+
+        // เริ่มอัปเดตเวลาในหน้าที่กำลังเล่น
+        function startClock() {
+          anchorMs = performance.now();
+          if (mode !== 'timed') return;
+          repaintClock();
+          if (!ended) clock = setInterval(repaintClock,100);
+        }
+
+        // วาดนาฬิกาและจบรอบเมื่อหมดเวลา
+        function repaintClock() {
+          var second = Math.ceil(remainingTime());
+          byId('timerValue').textContent = timeText(second * 1000);
+          if (second !== lastSecond) {
+            lastSecond = second;
+            emit('timeTick',{secondsLeft:second});
+          }
+          if (!second && !ended) endPuzzle(false);
+        }
+
+        // แปลงเวลาเป็นนาทีและวินาที
+        function timeText(ms) {
+          var s = Math.floor(ms/1000);
+          return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0');
+        }
+
+        // บันทึกคำที่ไขได้เองและเตรียมการ์ดคำศัพท์
+        function rememberWord(entry) {
+          termQueue.push(entry);
+          emit('wordSolved',{a:entry.a,c:entry.c,num:entry.num,dir:entry.dir});
+          if (!revealed[entry.a] && stats.collected.indexOf(entry.a) < 0) {
+            stats.collected.push(entry.a);
+            write(STATS,stats);
+            emit('termCollected',{a:entry.a,collected:stats.collected.length,total:totalWords()});
+          }
+        }
+
+        // ตรวจตัวอักษร คำศัพท์ คะแนน และผลของรอบ
+        function inspectAnswers(manual) {
+          if (ended) return;
+          var result = Core.checkGrid(layout,letters);
+          var values = Object.values(result.cells);
+          var right = values.filter(function (x) { return x === 'right'; }).length;
+          var wrong = values.filter(function (x) { return x === 'wrong'; }).length;
+          if (manual) checks++;
+          marks = result.cells;
+          var oldSize = termQueue.length;
+          result.entries.forEach(function (entry) {
+            var key = entryId(entry);
+            if (!entry.solved || solved[key]) return;
+            solved[key] = true;
+            rememberWord(entry);
+          });
+          if (termQueue.length > oldSize) {
+            playTone(523.25,0.09,0);
+            renderTerm();
+          }
+          complete = result.complete;
+          updateScore(0);
+          var feedback = byId('feedback');
+          if (manual) {
+            feedback.textContent = !wrong && !right
+              ? 'ยังไม่ได้เติมตัวอักษร ลองเริ่มจากคำที่มั่นใจก่อน'
+              : wrong ? 'มี ' + wrong + ' ช่องที่ยังไม่ถูก ลองดูช่องที่มีกากบาท'
+              : 'ถูกทุกช่องที่เติมแล้ว เติมต่อได้เลย';
+            emit('checkUsed',{checks:checks,right:right,wrong:wrong,
+              solvedWords:Object.keys(solved).length,totalWords:layout.entries.length});
+            if (wrong) playTone(196,0.18,0);
+          }
+          save();
+          if (complete) endPuzzle(true);
+          else render();
+        }
+
+        // แจ้งว่าจบรอบและแสดงคะแนน เวลา และคำที่ได้เรียน
+        function endPuzzle(won) {
+          if (ended) return;
+          ended = true;
+          stopClock();
+          complete = won;
+          updateScore(mode === 'timed' ? remainingTime() : 0);
+          var stars = Core.puzzleStars(score, layout.entries.length);
+          if (won && stats.solvedSets.indexOf(setId) < 0) stats.solvedSets.push(setId);
+          var key = setId + ':' + mode;
+          var record = stats.best[key];
+          var isNew = !record || score > record.score;
+          if (isNew) stats.best[key] = {score:score,ms:Math.round(elapsedMs)};
+          var words = layout.entries.filter(function (entry) {
+            return solved[entryId(entry)] && !revealed[entry.a];
+          }).map(function (entry) { return entry.a; });
+          var summary = {setId:setId,mode:mode,seed:seed,solved:won,score:score,
+            stars:stars,checks:checks,hints:hints,reveals:reveals,ms:Math.round(elapsedMs),words:words};
+          var context = Object.assign({
+            collected:stats.collected.length,total:totalWords(),solvedSets:stats.solvedSets
+          },summary);
+          var newBadges = BADGES.filter(function (badge) {
+            return stats.badges.indexOf(badge.id) < 0 && Core.badgeRules[badge.test](context,badge.goal);
+          });
+          newBadges.forEach(function (badge) {
+            stats.badges.push(badge.id);
+            emit('badgeEarned',{id:badge.id,name:badge.name});
+          });
+          write(STATS,stats);
+          save();
+          var title = byId('resultTitle');
+          title.textContent = won ? 'ไขครบทุกคำแล้ว' : 'หมดเวลา';
+          byId('resultScore').textContent = 'คะแนน ' + score;
+          var notes = byId('resultStats');
+          notes.classList.remove('is-revealed');
+          notes.textContent = '';
+          var rows = [
+            ['','ผ่านแล้ว 1 ดาว','ดีมาก 2 ดาว','ยอดเยี่ยม 3 ดาว'][stars],
+            'ใช้เวลา ' + timeText(elapsedMs),
+            'ตรวจ ' + checks + ' ครั้ง',
+            'ใช้ตัวช่วย ' + (hints + reveals) + ' ครั้ง'
+          ];
+          if (isNew) rows.unshift('สถิติใหม่ของชุดนี้');
+          rows.forEach(function (text,index) {
+            var line = document.createElement('p');
+            line.textContent = text;
+            line.style.setProperty('--result-order',index);
+            notes.appendChild(line);
+          });
+          var list = byId('resultWords');
+          list.textContent = '';
+          words.forEach(function (answer) {
+            var word = Core.term(answer);
+            if (word) list.appendChild(termRow(word));
+          });
+          notes.after(byId('termCard'));
+          showScreen('result');
+          notes.getBoundingClientRect();
+          notes.classList.add('is-revealed');
+          if (won) {
+            playTone(523.25,0.16,0);
+            playTone(659.25,0.19,0.16);
+            emit('puzzleSolved',{setId:setId,checks:checks,totalWords:layout.entries.length});
+          } else playTone(196,0.2,0);
+          if (newBadges.length) showToast('ได้เหรียญ "' + newBadges[0].name + '"');
+          emit('puzzleEnd',summary);
+        }
+
+        // ใช้คำใบ้หนึ่งช่อง แล้วหักเวลาหรือคะแนนตามโหมด
+        function requestHint() {
+          if (!position) { showToast('เลือกช่องที่ต้องการก่อน'); return; }
+          var key = cellKey(position.row,position.col);
+          if (locked(key)) return;
+          var next = Core.applyHint({letters:letters,fixed:fixed,hints:hints},key,board[key].answer);
+          if (next.letters === letters) { showToast('ใช้ตัวช่วยครบแล้ว'); return; }
+          letters = next.letters;
+          fixed = next.fixed;
+          hints = next.hints;
+          emit('hintUsed',{kind:'letter',left:CONFIG.hintsPerPuzzle - hints});
+          if (mode === 'timed' && remainingTime() <= 0) endPuzzle(false);
+          else inspectAnswers(false);
+        }
+
+        // เผยคำที่เลือกและเปิดการ์ดโดยละเว้นคะแนนของคำนั้น
+        function requestReveal() {
+          var entry = selectedEntry();
+          if (!entry) { showToast('เลือกช่องที่ต้องการก่อน'); return; }
+          if (solved[entryId(entry)]) return;
+          var next = Core.applyReveal({letters:letters,revealed:revealed,reveals:reveals},entry);
+          if (next.letters === letters) { showToast('ใช้ตัวช่วยครบแล้ว'); return; }
+          letters = next.letters;
+          revealed = next.revealed;
+          reveals = next.reveals;
+          emit('hintUsed',{kind:'word',left:CONFIG.revealsPerPuzzle - reveals});
+          inspectAnswers(false);
+        }
+
+        // สร้างตารางด้วยเมล็ดที่ส่งมา หรือสุ่มเมล็ดใหม่
+        function newPuzzle(id, newSeed) {
+          if (newSeed === undefined) {
+            newSeed = Math.floor(Math.random() * 2147483646) + 1;
+            if (progress[id] && progress[id].seed === newSeed) newSeed = (newSeed % 2147483646) + 1;
+          }
+          var set = WORD_SETS.find(function (row) { return row.id === id; }) || activeSet();
+          progress[set.id] = {signature:signature(set),seed:newSeed,mode:mode};
+          loadSet(set.id);
+          save();
+        }
+
+        // ขอให้ยืนยันแยกกันสำหรับการออกและเปลี่ยนตาราง
+        function confirmAction(button,key,label,confirmLabel,action) {
+          if (pendingAction === key && performance.now() < confirmUntil) {
+            confirmUntil = 0;
+            pendingAction = '';
+            button.textContent = label;
+            action();
+            return;
+          }
+          pendingAction = key;
+          confirmUntil = performance.now() + CONFIG.confirmMs;
+          button.textContent = confirmLabel;
+          setTimeout(function () { button.textContent = label; },CONFIG.confirmMs);
+        }
+
+        // เริ่มหรือเล่นต่อโดยเก็บโหมดของตารางที่บันทึกไว้
+        function startPuzzle() {
+          enableAudio();
+          var saved = progress[setId];
+          if (saved && !saved.ended && !saved.complete && saved.signature === signature(activeSet())) loadSet(setId);
+          else newPuzzle(setId);
+        }
+
+        // แสดงสมุดศัพท์ตามกลุ่มพร้อมซ่อนคำตอบที่ยังไม่ได้ไข
+        function showGlossary() {
+          var root = byId('glossary');
+          root.textContent = '';
+          byId('collectionCount').textContent = 'สะสมแล้ว ' + stats.collected.length + ' จาก ' + totalWords() + ' คำ';
+          byId('collectionProgress').max = totalWords();
+          byId('collectionProgress').value = stats.collected.length;
+          WORD_SETS.forEach(function (set,index) {
+            var group = document.createElement('details');
+            var name = document.createElement('summary');
+            name.textContent = set.title;
+            group.open = index === 0;
+            group.appendChild(name);
+            set.words.forEach(function (word) {
+              if (stats.collected.indexOf(word.a) >= 0) group.appendChild(termRow(Core.term(word.a)));
+              else {
+                var row = document.createElement('p');
+                row.className = 'term-row';
+                row.textContent = word.c + ' · ยังไม่ได้ไข';
+                group.appendChild(row);
+              }
+            });
+            root.appendChild(group);
+          });
+          showScreen('glossary');
+        }
+
+        // วาดเหรียญที่มีเส้นขอบและพื้นต่างกันตามผลสะสม
+        function medal(badge) {
+          var svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+          svg.setAttribute('viewBox','0 0 32 32');
+          svg.setAttribute('class','medal' + (stats.badges.indexOf(badge.id) >= 0 ? ' earned' : ''));
+          svg.setAttribute('role','img');
+          svg.setAttribute('aria-label',badge.name);
+          svg.innerHTML = '<path d="M9 3l3 11m11-11l-3 11" fill="none" stroke="currentColor"/>'
+            + '<circle cx="16" cy="22" r="7" fill="none" stroke="currentColor"/>';
+          return svg;
+        }
+
+        // แสดงหน้าแรก เลือกชุดและโหมด พร้อมอ่านสถิติและเหรียญ
+        function renderHome() {
+          var root = byId('sets');
+          root.textContent = '';
+          WORD_SETS.forEach(function (set) {
+            var b = document.createElement('button');
+            b.setAttribute('aria-pressed',String(set.id === setId));
+            b.textContent = set.title;
+            var found = set.words.filter(function (w) { return stats.collected.indexOf(w.a) >= 0; }).length;
+            var label = document.createElement('small');
+            label.textContent = set.level + ' · สะสมแล้ว ' + found + ' จาก ' + set.words.length + ' คำ';
+            b.appendChild(label);
+            b.onclick = function () {
+              setId = set.id;
+              saveSettings();
+              renderHome();
+              root.querySelector('[aria-pressed="true"]').focus();
+            };
+            root.appendChild(b);
+          });
+          var picker = byId('modePicker');
+          picker.textContent = '';
+          MODES.forEach(function (item) {
+            var b = document.createElement('button');
+            b.textContent = item.label;
+            b.setAttribute('aria-pressed',String(item.id === mode));
+            b.onclick = function () {
+              mode = item.id;
+              saveSettings();
+              renderHome();
+              picker.querySelector('[aria-pressed="true"]').focus();
+            };
+            picker.appendChild(b);
+          });
+          byId('modeAbout').textContent = MODES.find(function (row) { return row.id === mode; }).about;
+          var saved = progress[setId];
+          var resume = saved && !saved.complete && !saved.ended && saved.signature === signature(activeSet());
+          byId('start').textContent = resume ? 'เล่นต่อ' : 'เริ่มเล่น';
+          if (resume && saved.mode && saved.mode !== mode) byId('start').textContent = 'เล่นต่อ';
+          byId('newHome').hidden = !resume;
+          var record = stats.best[setId + ':' + mode];
+          byId('homeBest').textContent = record ? 'คะแนนสูงสุด ' + record.score : '';
+          byId('medals').textContent = '';
+          byId('badgeList').textContent = '';
+          BADGES.forEach(function (badge) {
+            byId('medals').appendChild(medal(badge));
+            var line = document.createElement('li');
+            line.append(medal(badge),badge.name + ' · ' + badge.hint);
+            byId('badgeList').appendChild(line);
+          });
+        }
+
+        // คืนหน้าเลือกรอบและเก็บความคืบหน้า
+        function goCover() {
+          if (screen === 'play') {
+            stopClock();
+            save();
+          }
+          dismissTerm();
+          showScreen('cover');
+        }
+        function goHome() {
+          if (screen === 'play') {
+            stopClock();
+            save();
+          }
+          dismissTerm();
+          showScreen('home');
+          renderHome();
+        }
+
+        // บันทึกโหมด ชุดคำศัพท์ และค่าการแสดงผล
+        function saveSettings() {
+          write(SETTINGS,{setId:setId,mode:mode,theme:theme,palette:palette,reduced:reduced,volume:volume});
+        }
+
+        // ตั้งธีมและการเคลื่อนไหวจากค่าที่เลือก
+        function applyPreferences() {
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.palette = palette;
+          byId('palette').value = palette;
+          document.documentElement.dataset.reduce = String(reduced);
+          byId('theme').value = theme;
+          var qt = document.getElementById('quickTheme');
+          if (qt) qt.textContent = {auto:'🌓 อัตโนมัติ',light:'☀️ สว่าง',dark:'🌙 มืด'}[theme] || '🌓 อัตโนมัติ';
+          byId('reduce').checked = reduced;
+        }
+
+        // เพิ่มภาพประกอบตามขั้นของวิธีเล่น
+        function renderHowto() {
+          renderSteps(byId('instructions'));
+          renderSteps(byId('rulesSteps'));
+        }
+        // เปิด/ปิดหน้าต่างวิธีเล่นก่อนเข้าเกม
+        function showRules() {
+          byId('rulesSkip').checked = false;
+          byId('rulesDialog').hidden = false;
+          byId('rulesTitle').focus();
+        }
+        function hideRules() {
+          byId('rulesDialog').hidden = true;
+        }
+        function renderSteps(target) {
+          HOWTO.forEach(function (text,index) {
+            var icons = ['✏️','✅','🔊','📚'];
+            var card = document.createElement('div');
+            card.className = 'step';
+            card.style.setProperty('--step-color', ['var(--action)','var(--blue)','var(--good)','var(--brass)'][index % 4]);
+            var badge = document.createElement('span');
+            badge.className = 'step-badge';
+            badge.textContent = String(index+1);
+            var emoji = document.createElement('span');
+            emoji.className = 'step-icon';
+            emoji.setAttribute('aria-hidden','true');
+            emoji.textContent = icons[index % icons.length];
+            var body = document.createElement('p');
+            body.textContent = text;
+            card.append(badge, emoji, body);
+            target.appendChild(card);
+          });
+        }
+
+        // อ่านข้อมูลจากที่เก็บในเครื่อง
+        function read(key, fallback) {
+          try {
+            var x = localStorage.getItem(key);
+            return x ? JSON.parse(x) : fallback;
+          } catch (e) {
+            storageOK = false;
+            return memory[key] || fallback;
+          }
+        }
+
+        // บันทึกข้อมูลในเครื่อง
+        function write(key, value) {
+          memory[key] = value;
+          try {
+            localStorage.setItem(key, JSON.stringify(value));
+          } catch (e) {
+            storageOK = false;
+            notice();
+          }
+        }
+
+        // แจ้งข้อความเมื่อบันทึกไม่ได้
+        function notice() {
+          document.getElementById('storageNotice').textContent = storageOK
+            ? ''
+            : 'เบราว์เซอร์นี้เก็บความคืบหน้าไม่ได้ ปริศนายังเล่นได้ตามปกติ';
+        }
+
+        // ลงทะเบียนผู้รับเหตุการณ์
+        function on(name, fn) {
+          (handlers[name] || (handlers[name] = [])).push(fn);
+        }
+
+        // ส่งเหตุการณ์และแยกข้อผิดพลาดของส่วนเสริม
+        function emit(name, detail) {
+          (handlers[name] || []).forEach(function (fn) {
+            try {
+              fn(detail);
+            } catch (e) {
+              errors.push(String(e));
+              console.warn(String(e));
+              showCheck();
+            }
+          });
+        }
+
+        // คืนชุดคำศัพท์ที่เลือก
+        function activeSet() {
+          return (
+            WORD_SETS.find(function (s) {
+              return s.id === setId;
+            }) || WORD_SETS[0]
+          );
+        }
+
+        // คืนรหัสคำจากหมายเลขและทิศ
+        function entryId(e) {
+          return e.num + ':' + e.dir;
+        }
+
+        // คืนตำแหน่งช่องทั้งหมดของคำ
+        function cellsOf(e) {
+          return Array.from({ length: e.a.length }, function (_, i) {
+            return {
+              row: e.row + (e.dir === 'down' ? i : 0),
+              col: e.col + (e.dir === 'across' ? i : 0)
+            };
+          });
+        }
+
+        // คืนรหัสจากแถวและคอลัมน์
+        function cellKey(r, c) {
+          return r + ',' + c;
+        }
+
+        // สร้างลายเซ็นสำหรับตรวจความคงเดิมของชุดคำ
+        function signature(set) {
+          return JSON.stringify(Core.normalizeWords(set.words).words);
+        }
+        // เก็บตัวอักษร รหัสตาราง โหมด ตัวช่วย และเวลา
+        function save() {
+          progress[setId] = {
+            signature:signature(activeSet()), seed:seed, mode:mode, letters:letters,
+            marks:marks, solved:solved, checks:checks, complete:complete, ended:ended,
+            score:score, fixed:fixed, revealed:revealed, hints:hints, reveals:reveals,
+            elapsedMs:Math.round(activeMs())
+          };
+          write(PROGRESS,progress);
+        }
+
+        // สร้างหรือโหลดผังที่ผูกกับเมล็ดที่บันทึกไว้
+        function loadSet(id) {
+          stopClock();
+          dismissTerm();
+          setId = WORD_SETS.some(function (item) { return item.id === id; }) ? id : WORD_SETS[0].id;
+          var set = activeSet();
+          var saved = progress[setId];
+          if (!saved || saved.signature !== signature(set)) saved = {};
+          seed = Number.isInteger(saved.seed) ? saved.seed : 0;
+          mode = saved.mode || (saved.signature && seed === 0 ? 'classic' : mode);
+          var cacheKey = setId + ':' + seed;
+          if (!cache[cacheKey]) {
+            var raw = Core.makePuzzle(set,seed,CONFIG);
+            cache[cacheKey] = Object.assign({},raw,{entries:Core.numberEntries(raw).entries});
+          }
+          layout = cache[cacheKey];
+          board = {};
+          layout.entries.forEach(function (entry) {
+            cellsOf(entry).forEach(function (cell,index) {
+              var key = cellKey(cell.row,cell.col);
+              if (!board[key]) board[key] = {answer:entry.a[index],entries:[],num:0};
+              board[key].entries.push(entry);
+              if (!index) board[key].num = entry.num;
+            });
+          });
+          letters = saved.letters || {};
+          marks = saved.marks || {};
+          solved = saved.solved || {};
+          checks = saved.checks || 0;
+          complete = Boolean(saved.complete);
+          ended = false;
+          fixed = saved.fixed || {};
+          revealed = saved.revealed || {};
+          hints = saved.hints || 0;
+          reveals = saved.reveals || 0;
+          elapsedMs = saved.elapsedMs || 0;
+          score = saved.score || 0;
+          selected = null;
+          position = null;
+          lastSecond = null;
+          byId('feedback').textContent = '';
+          byId('quit').textContent = 'ออก';
+          byId('check').hidden = mode === 'instant';
+          byId('timer').hidden = mode !== 'timed';
+          byId('score').textContent = score;
+          byId('setTitle').textContent = set.title;
+          termParent.appendChild(byId('termCard'));
+          saveSettings();
+          showScreen('play');
+          render();
+          startClock();
+          emit('puzzleStart',{setId:setId,title:set.title,
+            wordCount:layout.entries.length,cols:layout.cols,rows:layout.rows});
+        }
+
+        // คืนคำที่เลือกอยู่
+        function selectedEntry() {
+          return (
+            layout.entries.find(function (e) {
+              return entryId(e) === selected;
+            }) || null
+          );
+        }
+
+        // ตรวจว่าช่องนี้แก้ได้หรือไม่
+        function locked(k) {
+          return Boolean(fixed[k]) || (
+            board[k] &&
+            board[k].entries.some(function (e) {
+              return !!solved[entryId(e)];
+            })
+          );
+        }
+
+        // ย้ายโฟกัสไปยังช่องที่เลือก
+        function focusCell() {
+          if (!position) return;
+          var b = document.querySelector(
+            '.cell[data-pos="' + cellKey(position.row, position.col) + '"]'
+          );
+          if (b) b.focus();
+        }
+
+        // เลือกคำจากหมายเลขและทิศ
+        function selectEntry(num, dir) {
+          dismissTerm();
+          if (!layout) return;
+          var e = layout.entries.find(function (x) {
+            return x.num === num && x.dir === dir;
+          });
+          if (!e) return;
+          selected = entryId(e);
+          var cells = cellsOf(e),
+            target =
+              cells.find(function (c) {
+                return !letters[cellKey(c.row, c.col)] && !locked(cellKey(c.row, c.col));
+              }) || cells[0];
+          position = { row: target.row, col: target.col };
+          render();
+          focusCell();
+        }
+
+        // เลือกช่องและสลับทิศเมื่อกดช่องเดิม
+        function selectCell(r, c) {
+          dismissTerm();
+          var k = cellKey(r, c),
+            cell = board[k];
+          if (!cell) return;
+          var e = selectedEntry(),
+            same = position && position.row === r && position.col === c;
+          if (same && cell.entries.length > 1) {
+            e = cell.entries.find(function (x) {
+              return !e || entryId(x) !== entryId(e);
+            });
+          } else if (
+            !e ||
+            !cell.entries.some(function (x) {
+              return entryId(x) === entryId(e);
+            })
+          )
+            e =
+              cell.entries.find(function (x) {
+                return x.dir === 'across';
+              }) || cell.entries[0];
+          selected = entryId(e);
+          position = { row: r, col: c };
+          render();
+          focusCell();
+        }
+
+        // ใส่หรือลบตัวอักษร
+        function setLetter(r, c, value) {
+          var k = cellKey(r, c);
+          if (!board[k] || locked(k) || complete) return false;
+          var v = String(value || '').toUpperCase();
+          if (v && !/^[A-Z]$/.test(v)) return false;
+          if ((letters[k] || '') === v) return false;
+          if (v) letters[k] = v;
+          else delete letters[k];
+          delete marks[k];
+          save();
+          emit('letterEntered', { row: r, col: c, letter: v });
+          if (mode === 'instant') inspectAnswers(false);
+          return true;
+        }
+
+        // รับอักษรและเลื่อนไปยังช่องถัดไป
+        function inputLetter(value) {
+          dismissTerm();
+          if (!position || !selectedEntry()) return;
+          var r = position.row,
+            c = position.col;
+          if (locked(cellKey(r, c))) return;
+          setLetter(r, c, value);
+          var cells = cellsOf(selectedEntry()),
+            index = cells.findIndex(function (x) {
+              return x.row === r && x.col === c;
+            });
+          for (var i = index + 1; i < cells.length; i++)
+            if (!locked(cellKey(cells[i].row, cells[i].col))) {
+              position = cells[i];
+              break;
+            }
+          render();
+          focusCell();
+        }
+
+        // ลบอักษรหรือถอยไปยังช่องก่อนหน้า
+        function backspace() {
+          dismissTerm();
+          if (!position || !selectedEntry()) return;
+          var k = cellKey(position.row, position.col);
+          if (letters[k] && !locked(k)) setLetter(position.row, position.col, '');
+          else {
+            var cells = cellsOf(selectedEntry()),
+              idx = cells.findIndex(function (x) {
+                return cellKey(x.row, x.col) === k;
+              });
+            for (var i = idx - 1; i >= 0; i--)
+              if (!locked(cellKey(cells[i].row, cells[i].col))) {
+                position = cells[i];
+                break;
+              }
+          }
+          render();
+          focusCell();
+        }
+
+        // เลื่อนช่องเลือกตามทิศที่กด
+        function moveCell(dr, dc) {
+          if (!position) return;
+          var r = position.row + dr,
+            c = position.col + dc;
+          while (r >= 0 && r < layout.rows && c >= 0 && c < layout.cols) {
+            if (board[cellKey(r, c)]) {
+              selectCell(r, c);
+              return;
+            }
+            r += dr;
+            c += dc;
+          }
+        }
+
+        // วาดส่วนประกอบของหน้าเล่น
+        function render() {
+          if (!layout) return;
+          renderGrid();
+          renderClues();
+          renderKeyboard();
+          var n = Object.keys(solved).length;
+          document.getElementById('progress').textContent =
+            'เติมถูกแล้ว ' +
+            n +
+            ' จาก ' +
+            layout.entries.length +
+            ' คำ · ตรวจไปแล้ว ' +
+            checks +
+            ' ครั้ง';
+          var e = selectedEntry();
+          document.getElementById('clueBar').textContent = e
+            ? e.num + ' ' + (e.dir === 'across' ? 'แนวนอน' : 'แนวตั้ง') + ' · ' + e.c
+            : 'แตะช่องในตาราง หรือแตะคำใบ้เพื่อเริ่ม';
+          document.getElementById('setNotice').textContent =
+            layout.entries.length < CONFIG.minWordsPlaced
+              ? 'ชุดนี้วางคำลงตารางได้ไม่ถึง 8 คำ ลองเพิ่มคำที่มีตัวอักษรซ้ำกับคำอื่น'
+              : '';
+          byId('hintLetter').textContent = 'ใบ้ตัวอักษร (' + (CONFIG.hintsPerPuzzle - hints) + ')';
+          byId('revealWord').textContent = 'เผยทั้งคำ (' + (CONFIG.revealsPerPuzzle - reveals) + ')';
+          byId('hintLetter').disabled = hints >= CONFIG.hintsPerPuzzle;
+          byId('revealWord').disabled = reveals >= CONFIG.revealsPerPuzzle;
+          notice();
+        }
+
+        // สร้างปุ่มช่องและตัวบอกสถานะ
+        function renderGrid() {
+          if (!layout) return;
+          var grid = document.getElementById('grid'),
+            hadFocus = grid.contains(document.activeElement),
+            parent = grid.parentElement,
+            style = getComputedStyle(parent),
+            width =
+              (parent.clientWidth || 320) -
+              (parseFloat(style.paddingLeft) || 0) -
+              (parseFloat(style.paddingRight) || 0),
+            px = Math.max(
+              CONFIG.minCellPx,
+              Math.min(CONFIG.maxCellPx, Math.floor(width / Math.max(layout.cols, 1)))
+            );
+          grid.style.setProperty('--cols', layout.cols);
+          grid.style.setProperty('--cell', px + 'px');
+          grid.textContent = '';
+          for (var r = 0; r < layout.rows; r++)
+            for (var c = 0; c < layout.cols; c++) {
+              var k = cellKey(r, c),
+                cell = board[k];
+              if (!cell) {
+                var blank = document.createElement('span');
+                blank.className = 'blank';
+                grid.appendChild(blank);
+                continue;
+              }
+              var b = document.createElement('button'),
+                e = selectedEntry();
+              b.className =
+                'cell' +
+                (e &&
+                cell.entries.some(function (x) {
+                  return entryId(x) === entryId(e);
+                })
+                  ? ' is-entry'
+                  : '') +
+                (position && position.row === r && position.col === c ? ' is-selected' : '') +
+                (marks[k] === 'wrong' ? ' is-wrong' : '') +
+                (locked(k) ? ' is-solved' : '');
+              b.dataset.pos = k;
+              b.setAttribute('role', 'gridcell');
+              b.setAttribute(
+                'aria-label',
+                'แถว ' +
+                  (r + 1) +
+                  ' ช่อง ' +
+                  (c + 1) +
+                  (letters[k] ? ' ' + letters[k] : ' ว่าง') +
+                  (marks[k] === 'wrong' ? ' ไม่ถูก' : '')
+              );
+              if (cell.num) {
+                var n = document.createElement('span');
+                n.className = 'num';
+                n.textContent = cell.num;
+                b.appendChild(n);
+              }
+              b.appendChild(document.createTextNode(letters[k] || ''));
+              if (marks[k] === 'wrong') {
+                var cross = document.createElement('span');
+                cross.className = 'cross';
+                cross.textContent = '×';
+                b.appendChild(cross);
+              }
+              b.onclick = (function (row, col) {
+                return function () {
+                  selectCell(row, col);
+                };
+              })(r, c);
+              grid.appendChild(b);
+            }
+          if (hadFocus) focusCell();
+        }
+
+        // เรียงคำใบ้ตามแนวนอนและแนวตั้ง
+        function renderClues() {
+          ['across', 'down'].forEach(function (dir) {
+            var root = document.getElementById(dir);
+            root.textContent = '';
+            layout.entries
+              .filter(function (e) {
+                return e.dir === dir;
+              })
+              .sort(function (a, b) {
+                return a.num - b.num;
+              })
+              .forEach(function (e) {
+                var b = document.createElement('button');
+                b.className = solved[entryId(e)] ? 'is-solved' : '';
+                b.textContent = e.num + '. ' + e.c + (solved[entryId(e)] ? ' · ถูก' : '');
+                b.onclick = function () {
+                  selectEntry(e.num, e.dir);
+                };
+                root.appendChild(b);
+              });
+          });
+        }
+
+        // สร้างแป้นกดตัวอักษร
+        function renderKeyboard() {
+          var root = document.getElementById('keyboard');
+          root.hidden = complete;
+          root.textContent = '';
+          if (complete) return;
+          ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'].forEach(function (row, index) {
+            var div = document.createElement('div');
+            div.className = 'key-row';
+            row.split('').forEach(function (letter) {
+              var b = document.createElement('button');
+              b.textContent = letter;
+              b.onclick = function () {
+                inputLetter(letter);
+              };
+              div.appendChild(b);
+            });
+            if (index === 2) {
+              var del = document.createElement('button');
+              del.textContent = 'ลบ';
+              del.onclick = backspace;
+              div.appendChild(del);
+            }
+            root.appendChild(div);
+          });
+        }
+        // ล้างตัวอักษรในตารางใบเดิมเมื่อกดยืนยันครั้งที่สอง
+        function requestReset() {
+          confirmAction(byId('restart'),'restart','เริ่มชุดนี้ใหม่','กดอีกครั้งเพื่อล้างคำตอบ',function () {
+            newPuzzle(setId,seed);
+            emit('puzzleReset',{setId:setId});
+          });
+        }
+
+        // แสดงผลตรวจระบบ
+        function showCheck() {
+          var result = runSelfCheck(),
+            box = document.getElementById('checkResult');
+          box.hidden = false;
+          box.textContent = '';
+          var h = document.createElement('p');
+          h.className = result.failed ? 'is-fail' : 'is-pass';
+          h.textContent = result.failed
+            ? '× ไม่ผ่าน ' + result.failed + ' ข้อ'
+            : '✓ ผ่าน ' + result.passed + ' จาก ' + result.results.length + ' ข้อ';
+          box.appendChild(h);
+          var ul = document.createElement('ul');
+          result.results.forEach(function (x) {
+            var li = document.createElement('li');
+            li.textContent = (x.ok ? 'ผ่าน ' : 'ไม่ผ่าน ') + x.name;
+            ul.appendChild(li);
+          });
+          box.appendChild(ul);
+          var info = document.createElement('p');
+          info.textContent =
+            'ชุดคำศัพท์ ' +
+            WORD_SETS.length +
+            ' · ' +
+            (storageOK ? 'บันทึกได้' : 'บันทึกไม่ได้');
+          box.appendChild(info);
+          info.append(' · โหมด ' + MODES.length + ' · เหรียญ ' + BADGES.length + ' · หน้า 6');
+          WORD_SETS.forEach(function (set) {
+            var normalized = Core.normalizeWords(set.words),
+              l = cache[set.id] || Core.bestLayout(normalized.words, CONFIG);
+            if (l.unplaced.length) {
+              var p = document.createElement('p');
+              p.textContent =
+                'คำที่วางลงตารางไม่ได้: ' +
+                l.unplaced
+                  .map(function (w) {
+                    return w.a;
+                  })
+                  .join(', ');
+              box.appendChild(p);
+            }
+            normalized.rejected.forEach(function (x) {
+              var p = document.createElement('p');
+              p.textContent = set.title + ' · ' + x.a + ' · ' + x.reason;
+              box.appendChild(p);
+            });
+          });
+          errors.forEach(function (e) {
+            var p = document.createElement('p');
+            p.textContent = 'ส่วนเสริม: ' + e;
+            box.appendChild(p);
+          });
+        }
+        window.Game = {
+          on: on,
+          getState: function () {
+            return JSON.parse(
+              JSON.stringify({
+                setId: setId,
+                layout: layout,
+                mode:mode,seed:seed,score:score,hints:hints,reveals:reveals,
+                letters: letters,
+                checks: checks,
+                solved: solved,
+                selected: selected,
+                position: position,
+                complete: complete
+              })
+            );
+          },
+          CONFIG: CONFIG,
+          DATA: {WORD_SETS:WORD_SETS,MODES:MODES,BADGES:BADGES},
+          getStats:function () { return JSON.parse(JSON.stringify(stats)); },
+          getPuzzle:function () { return layout ? {setId:setId,seed:seed,entries:layout.entries.slice()} : null; },
+          newPuzzle:newPuzzle,
+          playDemo:playDemo,
+          showToast:showToast,
+          Core: Core,
+          runSelfCheck: runSelfCheck,
+          selectEntry: selectEntry,
+          getSelectedEntry: function () {
+            var e = selectedEntry();
+            return e ? { a: e.a, c: e.c, num: e.num, dir: e.dir, cells: cellsOf(e) } : null;
+          },
+          setLetter: setLetter,
+          refresh: render
+        };
+        document.addEventListener('keydown', function (e) {
+          if (screen !== 'play' || !selected || complete || ended) return;
+          var target = e.target,
+            inGrid = target && target.closest && target.closest('#grid');
+          if (e.key === 'Escape' && inGrid) {
+            e.preventDefault();
+            (mode === 'instant' ? byId('hintLetter') : byId('check')).focus();
+            return;
+          }
+          if (e.key === 'Tab' && inGrid) {
+            e.preventDefault();
+            var order = layout.entries.slice().sort(function (a, b) {
+                return a.num - b.num || (a.dir === 'across' ? -1 : 1);
+              }),
+              i = order.findIndex(function (x) {
+                return entryId(x) === selected;
+              }),
+              next = order[(i + (e.shiftKey ? -1 : 1) + order.length) % order.length];
+            selectEntry(next.num, next.dir);
+            return;
+          }
+          if (e.ctrlKey || e.metaKey || e.altKey) return;
+          if (/^[a-zA-Z]$/.test(e.key)) {
+            e.preventDefault();
+            inputLetter(e.key);
+            return;
+          }
+          if (e.key === 'Backspace') {
+            e.preventDefault();
+            backspace();
+            return;
+          }
+          if (e.key === ' ' && inGrid) {
+            e.preventDefault();
+            if (position) selectCell(position.row, position.col);
+            return;
+          }
+          var d = {
+            ArrowLeft: [0, -1],
+            ArrowRight: [0, 1],
+            ArrowUp: [-1, 0],
+            ArrowDown: [1, 0]
+          }[e.key];
+          if (d && inGrid) {
+            e.preventDefault();
+            moveCell(d[0], d[1]);
+          }
+        });
+        byId('check').onclick = function () { enableAudio(); inspectAnswers(true); };
+        byId('restart').onclick = requestReset;
+        byId('selfcheck').onclick = showCheck;
+        byId('backPlay').onclick = goCover;
+        byId('backHome').onclick = goCover;
+        byId('start').onclick = function () {
+          if (stats.skipRules) startPuzzle();
+          else showRules();
+        };
+        byId('rulesStart').onclick = function () {
+          stats.skipRules = byId('rulesSkip').checked;
+          write(STATS,stats);
+          hideRules();
+          startPuzzle();
+        };
+        byId('rulesClose').onclick = hideRules;
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !byId('rulesDialog').hidden) hideRules();
+        });
+        byId('newResult').onclick = function () { newPuzzle(setId); };
+        byId('newHome').onclick = function () {
+          var saved = progress[setId];
+          if (saved && Object.keys(saved.letters || {}).length) {
+            confirmAction(this,'new','ตารางใหม่','กดอีกครั้งเพื่อทิ้งตารางนี้',function () { newPuzzle(setId); });
+          } else newPuzzle(setId);
+        };
+        byId('otherSet').onclick = goHome;
+        byId('quit').onclick = function () {
+          confirmAction(this,'quit','ออก','กดอีกครั้งเพื่อออก (ความคืบหน้าจะถูกเก็บไว้)',goHome);
+        };
+        byId('hintLetter').onclick = requestHint;
+        byId('revealWord').onclick = requestReveal;
+        byId('openGlossary').onclick = showGlossary;
+        byId('resultGlossary').onclick = showGlossary;
+        byId('closeGlossary').onclick = goHome;
+        byId('openBadges').onclick = function () { showScreen('badges'); };
+        byId('closeBadges').onclick = goHome;
+        byId('openHowto').onclick = function () { showScreen('howto'); };
+        byId('closeHowto').onclick = function () {
+          stats.seenHowto = true;
+          write(STATS,stats);
+          goHome();
+        };
+        byId('volume').value = volume;
+        byId('volume').oninput = function () { volume = Number(this.value); saveSettings(); };
+        byId('testSound').onclick = function () {
+          if (enableAudio()) playTone(440,0.25,0);
+          else showToast('เบราว์เซอร์นี้เล่นเสียงตัวอย่างไม่ได้');
+        };
+        byId('theme').onchange = function () {
+          theme = this.value;
+          applyPreferences();
+          saveSettings();
+        };
+        document.getElementById('quickTheme').onclick = function () {
+          theme = {auto:'light',light:'dark',dark:'auto'}[theme] || 'auto';
+          applyPreferences();
+          saveSettings();
+        };
+        byId('coverStart').onclick = function () { showScreen('home'); };
+        byId('coverSettings').onclick = function () {
+          var d = document.querySelector('details.settings');
+          d.open = true;
+          d.scrollIntoView({behavior:'smooth', block:'center'});
+        };
+        byId('coverHelp').onclick = function () { showScreen('howto'); };
+        byId('palette').onchange = function () {
+          palette = this.value;
+          applyPreferences();
+          saveSettings();
+        };
+        byId('reduce').onchange = function () {
+          reduced = this.checked;
+          applyPreferences();
+          saveSettings();
+        };
+        byId('clearStats').onclick = function () {
+          confirmAction(this,'clear','ล้างข้อมูลของเกมนี้','กดอีกครั้งเพื่อล้างข้อมูล',function () {
+            [STATS,SETTINGS,PROGRESS].forEach(function (key) {
+              delete memory[key];
+              try { localStorage.removeItem(key); } catch (e) { storageOK = false; }
+            });
+            progress = {};
+            stats = {best:{},badges:[],collected:[],solvedSets:[],seenHowto:true};
+            if (screen === 'play') {
+              stopClock();
+              showScreen('home');
+            }
+            renderHome();
+          });
+        };
+        window.addEventListener('resize',renderGrid);
+        window.addEventListener('pagehide',function () {
+          if (screen === 'play') save();
+        });
+        document.addEventListener('visibilitychange',function () {
+          if (document.hidden) {
+            stopDemo();
+            if (screen === 'play') { stopClock(); save(); }
+          } else if (screen === 'play' && !ended) startClock();
+        });
+        termParent = byId('termCard').parentElement;
+        mode = MODES.some(function (item) { return item.id === settings.mode; }) ? settings.mode : 'classic';
+        applyPreferences();
+        // ═══ เอฟเฟกต์ระหว่างเล่น (ฟังเหตุการณ์ของเกม ไม่แตะกติกา) ═══
+        var fxLayer = document.createElement('div');
+        fxLayer.id = 'fxLayer';
+        document.body.appendChild(fxLayer);
+        function fxReduced() {
+          return document.documentElement.dataset.reduce === 'true' ||
+            (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        }
+        function fxColors() {
+          var css = getComputedStyle(document.documentElement);
+          return ['--action','--blue','--good','--brass'].map(function (v) {
+            return css.getPropertyValue(v).trim() || '#b596ec';
+          });
+        }
+        function fxCenterOfGrid() {
+          var r = byId('grid').getBoundingClientRect();
+          return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+        }
+        // กระดาษสีกระจายจากจุดที่กำหนด
+        function fxBurst(x, y, count) {
+          if (fxReduced()) return;
+          var colors = fxColors();
+          for (var i = 0; i < count; i++) {
+            var p = document.createElement('span');
+            p.className = 'fx-piece';
+            p.style.background = colors[i % colors.length];
+            p.style.left = x + 'px';
+            p.style.top = y + 'px';
+            fxLayer.appendChild(p);
+            var angle = Math.random() * Math.PI * 2;
+            var dist = 60 + Math.random() * 110;
+            var dx = Math.cos(angle) * dist;
+            var dy = Math.sin(angle) * dist - 50;
+            var spin = Math.random() * 720 - 360;
+            var anim = p.animate([
+              { transform: 'translate(0,0) rotate(0deg)', opacity: 1 },
+              { transform: 'translate(' + dx + 'px,' + (dy + 140) + 'px) rotate(' + spin + 'deg)', opacity: 0 }
+            ], { duration: 900 + Math.random() * 600, easing: 'cubic-bezier(.2,.7,.4,1)' });
+            anim.onfinish = function () { this.effect.target.remove(); };
+          }
+        }
+        // ข้อความลอยขึ้น เช่น "+10" หรือ "ถูกต้อง!"
+        function fxFloat(text, x, y) {
+          if (fxReduced()) return;
+          var s = document.createElement('span');
+          s.className = 'fx-float';
+          s.textContent = text;
+          s.style.left = x + 'px';
+          s.style.top = y + 'px';
+          fxLayer.appendChild(s);
+          var anim = s.animate([
+            { transform: 'translate(-50%,-50%) scale(.6)', opacity: 0 },
+            { transform: 'translate(-50%,-80%) scale(1.15)', opacity: 1, offset: .25 },
+            { transform: 'translate(-50%,-150%) scale(1)', opacity: 0 }
+          ], { duration: 1100, easing: 'ease-out' });
+          anim.onfinish = function () { s.remove(); };
+        }
+        function fxShakeGrid() {
+          if (fxReduced()) return;
+          byId('grid').animate([
+            { transform: 'translateX(0)' }, { transform: 'translateX(-7px)' },
+            { transform: 'translateX(6px)' }, { transform: 'translateX(-4px)' }, { transform: 'translateX(0)' }
+          ], { duration: 380 });
+        }
+        function fxGlowGrid() {
+          if (fxReduced()) return;
+          byId('grid').animate([
+            { boxShadow: '0 0 0 0 transparent' },
+            { boxShadow: '0 0 0 8px ' + fxColors()[1] },
+            { boxShadow: '0 0 0 0 transparent' }
+          ], { duration: 700 });
+        }
+        on('wordSolved', function (d) {
+          var c = fxCenterOfGrid();
+          fxBurst(c.x, c.y, 16);
+          fxFloat('ถูก! ' + d.a, c.x, c.y - 30);
+        });
+        on('scoreChange', function (d) {
+          if (!(d.delta > 0)) return;
+          var r = byId('score').getBoundingClientRect();
+          fxFloat('+' + d.delta, r.left + r.width / 2, r.top);
+        });
+        on('checkUsed', function (d) {
+          if (d.wrong) { fxShakeGrid(); return; }
+          if (d.right) {
+            var c = fxCenterOfGrid();
+            fxFloat('ถูกต้อง!', c.x, c.y);
+          }
+        });
+        on('hintUsed', function () {
+          var c = fxCenterOfGrid();
+          fxGlowGrid();
+          fxFloat('✨ คำใบ้', c.x, c.y);
+        });
+        on('badgeEarned', function (d) {
+          var c = fxCenterOfGrid();
+          fxBurst(c.x, c.y, 30);
+          fxFloat('ได้เหรียญใหม่!', c.x, c.y - 40);
+        });
+        on('puzzleSolved', function () {
+          var n = 0;
+          var timer = setInterval(function () {
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight * 0.6;
+            fxBurst(x, y, 22);
+            n++;
+            if (n >= 5) clearInterval(timer);
+          }, 260);
+          var c = fxCenterOfGrid();
+          fxFloat('เก่งมาก! 🎉', c.x, c.y);
+        });
+
+        renderHowto();
+        renderHome();
+        notice();
+        if (new URLSearchParams(location.search).get('selfcheck') === '1') {
+          document.querySelector('.settings').open = true;
+          showCheck();
+        }
+        /* ═══════════ โซน E · ส่วนเสริมของนิสิต (เขียนเพิ่มที่นี่) ═══════════ */
+        /* เพิ่มส่วนเสริมที่นี่ */
+        /* Game.on('puzzleStart', function (detail) {}); */
+      }());
+    </script>
+  </body>
+</html>
